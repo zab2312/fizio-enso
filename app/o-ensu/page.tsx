@@ -3,11 +3,11 @@ import Section from "@/components/Section";
 import { siteContent } from "@/content/siteContent";
 
 export const metadata: Metadata = {
-  title: "O Ensu – Filozofija i pristup | Fizio Enso",
-  description: "Upoznajte filozofiju Fizio Enso studija. Individualni pristup fizioterapiji i masažama u Zagrebu, fokusiran na ravnotežu tijela i uma.",
+  title: "O Ensōu – Filozofija i pristup | Fizio Ensō",
+  description: "Upoznajte filozofiju Fizio Ensō studija. Individualni pristup fizioterapiji i masažama u Zagrebu, fokusiran na ravnotežu tijela i uma.",
   openGraph: {
-    title: "O Ensu – Filozofija i pristup | Fizio Enso",
-    description: "Upoznajte filozofiju Fizio Enso studija. Individualni pristup fizioterapiji i masažama u Zagrebu, fokusiran na ravnotežu tijela i uma.",
+    title: "O Ensōu – Filozofija i pristup | Fizio Ensō",
+    description: "Upoznajte filozofiju Fizio Ensō studija. Individualni pristup fizioterapiji i masažama u Zagrebu, fokusiran na ravnotežu tijela i uma.",
     type: "website",
     locale: "hr_HR",
   },

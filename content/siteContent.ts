@@ -1,12 +1,12 @@
 export const siteContent = {
   brand: {
-    name: "Fizio Enso",
+    name: "Fizio Ensō",
     tagline: "harmonija tijela i uma",
     fullName: "ensō njega tijela",
   },
   nav: {
     home: "Početna",
-    about: "O Ensu",
+    about: "O nama",
     services: "Tretmani",
     space: "Prostor & Oprema",
     pricing: "Cjenik",
@@ -18,7 +18,7 @@ export const siteContent = {
       subtitle: "njega tijela",
     },
     intro: {
-      title: "Enso – harmonija tijela i uma",
+      title: "Harmonija tijela i uma",
       description:
         "Prostor u kojem pokret postaje smiren, disanje dublje, a tijelo prisutnije. Pod rukama fizioterapeuta iskusite jedinstvene tretmane pomoću kojih Vaše tijelo nalazi ravnotežu, a um smirenost. Tretmani koji dovode do ravnoteže tijela i uma.",
       cta: "Saznaj više o pristupu",
@@ -32,10 +32,10 @@ export const siteContent = {
     },
   },
   about: {
-    title: "O Ensu",
+    title: "O Ensōu",
     philosophy: {
-      title: "O Ensu",
-      text: "Enso je više od imena. To je ideja - kružni tok povratka sebi. U svijetu stalnog ubrzanja, ovdje se sve usporava. Pokret, pažnja, dah - sve se vraća u svoju tišinu. Kao fizioterapeut radim s Vama i za Vas, osluškujući tijelo i prilagođavajući se njegovom trenutku. Ovdje nije cilj \"učiniti više\", već učiniti manje - s više prisutnosti. Enso nudi svjesno vraćanje sebi.",
+      title: "O Ensōu",
+      text: "Ensō je više od imena. To je ideja - kružni tok povratka sebi. U svijetu stalnog ubrzanja, ovdje se sve usporava. Pokret, pažnja, dah - sve se vraća u svoju tišinu. Kao fizioterapeut radim s Vama i za Vas, osluškujući tijelo i prilagođavajući se njegovom trenutku. Ovdje nije cilj \"učiniti više\", već učiniti manje - s više prisutnosti. Ensō nudi svjesno vraćanje sebi.",
     },
     therapist: {
       title: "O terapeutkinji",
@@ -114,7 +114,7 @@ export const siteContent = {
       items: [
         {
           id: "tecar",
-          name: "TECAR",
+          name: "Tecar",
           description:
             "Uvodi toplinu, stimulira cirkulaciju i omekšava napeto tkivo. Podržava prirodne procese oporavka, a tijelo počinje ubrzavati vlastite procese regeneracije. Posebno korisno za stagnaciju oporavka, kronične napetosti, lokaliziranu bol i ukočenost koja se ne rješava sama.",
           duration: "10 min",
@@ -241,7 +241,7 @@ export const siteContent = {
       title: "Aparaturni postupci",
       items: [
         {
-          name: "TECAR",
+          name: "Tecar",
           serviceId: "tecar",
           durations: [{ duration: "10 min", price: "15 eur" }],
         },

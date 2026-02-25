@@ -4,11 +4,11 @@ import Button from "@/components/Button";
 import { siteContent } from "@/content/siteContent";
 
 export const metadata: Metadata = {
-  title: "Tretmani – Masaže i fizioterapija u Zagrebu | Fizio Enso",
-  description: "Ponuda masaža i terapijskih tretmana u Zagrebu: relaks, seitai, revital masaža, limfna drenaža, TECAR i aparaturni postupci za oporavak i smanjenje boli.",
+  title: "Tretmani – Masaže i fizioterapija u Zagrebu | Fizio Ensō",
+  description: "Ponuda masaža i terapijskih tretmana u Zagrebu: relaks, seitai, revital masaža, limfna drenaža, Tecar i aparaturni postupci za oporavak i smanjenje boli.",
   openGraph: {
-    title: "Tretmani – Masaže i fizioterapija u Zagrebu | Fizio Enso",
-    description: "Ponuda masaža i terapijskih tretmana u Zagrebu: relaks, seitai, revital masaža, limfna drenaža, TECAR i aparaturni postupci za oporavak i smanjenje boli.",
+    title: "Tretmani – Masaže i fizioterapija u Zagrebu | Fizio Ensō",
+    description: "Ponuda masaža i terapijskih tretmana u Zagrebu: relaks, seitai, revital masaža, limfna drenaža, Tecar i aparaturni postupci za oporavak i smanjenje boli.",
     type: "website",
     locale: "hr_HR",
   },
@@ -23,7 +23,7 @@ export default function ServicesPage() {
             Naši tretmani
           </h1>
           <p className="text-lg text-accent">
-            Svaki tretman u Ensu temelji se na holističkom pristupu tijelu, kombinirajući stručnost i intuitivni rad.
+            Svaki tretman u Ensōu temelji se na holističkom pristupu tijelu, kombinirajući stručnost i intuitivni rad.
           </p>
         </div>
       </Section>

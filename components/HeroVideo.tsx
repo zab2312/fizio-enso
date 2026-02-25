@@ -44,7 +44,7 @@ export default function HeroVideo() {
         <div className="relative w-64 h-64 md:w-96 md:h-96">
           <Image
             src="/info/logo.png"
-            alt="Fizio Enso logo - Fizioterapija i masaže u Zagrebu"
+            alt="Fizio Ensō logo - Fizioterapija i masaže u Zagrebu"
             fill
             className="object-contain drop-shadow-glow"
             priority

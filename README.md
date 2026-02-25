@@ -1,4 +1,4 @@
-# Fizio Enso - Marketing Website
+# Fizio Ensō - Marketing Website
 
 Premium, minimalist marketing website for a physiotherapy & massage studio.
 
@@ -53,7 +53,7 @@ npm start
 ## Assets
 
 ### Logo
-- Place the Enso logo at: `public/info/logo.png`
+- Place the Ensō logo at: `public/info/logo.png`
 - The logo should be a transparent PNG
 
 ### Hero Video

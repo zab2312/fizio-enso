@@ -17,7 +17,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Fizio Enso - Harmonija tijela i uma",
+  title: "Fizio Ensō - Harmonija tijela i uma",
   description: "Tretmani pod rukama fizioterapeuta. Prostor u kojem pokret postaje smiren, disanje dublje, a tijelo prisutnije.",
 };
 
@@ -29,7 +29,7 @@ export default function RootLayout({
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "HealthAndBeautyBusiness",
-    name: "Fizio Enso",
+    name: "Fizio Ensō",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Ulica Ivana Rendića 29",

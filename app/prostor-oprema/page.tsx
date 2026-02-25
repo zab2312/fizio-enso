@@ -4,10 +4,10 @@ import Section from "@/components/Section";
 import { siteContent } from "@/content/siteContent";
 
 export const metadata: Metadata = {
-  title: "Prostor i oprema – Studio u Maksimiru | Fizio Enso",
+  title: "Prostor i oprema – Studio u Maksimiru | Fizio Ensō",
   description: "Intiman i miran prostor za fizioterapiju i masaže u Maksimiru, Zagreb. Profesionalna oprema i visoki standardi higijene za vašu udobnost.",
   openGraph: {
-    title: "Prostor i oprema – Studio u Maksimiru | Fizio Enso",
+    title: "Prostor i oprema – Studio u Maksimiru | Fizio Ensō",
     description: "Intiman i miran prostor za fizioterapiju i masaže u Maksimiru, Zagreb. Profesionalna oprema i visoki standardi higijene za vašu udobnost.",
     type: "website",
     locale: "hr_HR",

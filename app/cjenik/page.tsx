@@ -5,11 +5,11 @@ import Button from "@/components/Button";
 import { siteContent } from "@/content/siteContent";
 
 export const metadata: Metadata = {
-  title: "Cjenik – Cijene masaža i terapija u Zagrebu | Fizio Enso",
-  description: "Pregled cijena masaža, tretmana i aparaturnih postupaka u Fizio Enso studiju u Zagrebu. Transparentan cjenik za sve usluge fizioterapije.",
+  title: "Cjenik – Cijene masaža i terapija u Zagrebu | Fizio Ensō",
+  description: "Pregled cijena masaža, tretmana i aparaturnih postupaka u Fizio Ensō studiju u Zagrebu. Transparentan cjenik za sve usluge fizioterapije.",
   openGraph: {
-    title: "Cjenik – Cijene masaža i terapija u Zagrebu | Fizio Enso",
-    description: "Pregled cijena masaža, tretmana i aparaturnih postupaka u Fizio Enso studiju u Zagrebu. Transparentan cjenik za sve usluge fizioterapije.",
+    title: "Cjenik – Cijene masaža i terapija u Zagrebu | Fizio Ensō",
+    description: "Pregled cijena masaža, tretmana i aparaturnih postupaka u Fizio Ensō studiju u Zagrebu. Transparentan cjenik za sve usluge fizioterapije.",
     type: "website",
     locale: "hr_HR",
   },

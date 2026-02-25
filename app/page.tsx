@@ -8,11 +8,11 @@ import { siteContent } from "@/content/siteContent";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Fizio Enso – Fizioterapija i masaže u Zagrebu",
-  description: "Holistički tretmani, masaže i terapije za ravnotežu tijela i uma u mirnom studiju u Maksimiru. Rezervirajte svoj termin u Fizio Enso.",
+  title: "Fizio Ensō – Fizioterapija i masaže u Zagrebu",
+  description: "Holistički tretmani, masaže i terapije za ravnotežu tijela i uma u mirnom studiju u Maksimiru. Rezervirajte svoj termin u Fizio Ensō.",
   openGraph: {
-    title: "Fizio Enso – Fizioterapija i masaže u Zagrebu",
-    description: "Holistički tretmani, masaže i terapije za ravnotežu tijela i uma u mirnom studiju u Maksimiru. Rezervirajte svoj termin u Fizio Enso.",
+    title: "Fizio Ensō – Fizioterapija i masaže u Zagrebu",
+    description: "Holistički tretmani, masaže i terapije za ravnotežu tijela i uma u mirnom studiju u Maksimiru. Rezervirajte svoj termin u Fizio Ensō.",
     type: "website",
     locale: "hr_HR",
   },
