@@ -14,8 +14,8 @@ const config: Config = {
         accent: "#6B6B6B",
       },
       fontFamily: {
-        serif: ['"Playfair Display"', "serif"],
-        sans: ['"Inter"', "sans-serif"],
+        serif: ['Lora', "serif"],
+        sans: ['Lora', "serif"],
       },
       boxShadow: {
         subtle: "0 2px 8px rgba(0, 0, 0, 0.08)",

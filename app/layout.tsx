@@ -1,20 +1,7 @@
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-playfair",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "Fizio Ensō - Harmonija tijela i uma",
@@ -47,8 +34,8 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="hr" className={`${inter.variable} ${playfair.variable}`}>
-      <body className={inter.className}>
+    <html lang="hr">
+      <body>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
