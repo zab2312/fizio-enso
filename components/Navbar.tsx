@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { siteContent } from "@/content/siteContent";
+import TopBar from "@/components/TopBar";
 
 export default function Navbar() {
   const pathname = usePathname();
@@ -44,15 +45,17 @@ export default function Navbar() {
   }, [isHomePage]);
 
   return (
-    <nav
+    <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isVisible
-          ? "opacity-100 translate-y-0 bg-background/95 backdrop-blur-sm shadow-subtle"
+          ? "opacity-100 translate-y-0 shadow-subtle"
           : isHomePage
           ? "opacity-0 -translate-y-full"
-          : "opacity-100 translate-y-0 bg-background/95 backdrop-blur-sm shadow-subtle"
+          : "opacity-100 translate-y-0 shadow-subtle"
       }`}
     >
+      <TopBar />
+      <nav className="bg-background/95 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="text-xl font-serif font-semibold text-foreground hover:text-accent transition-colors">
@@ -142,7 +145,8 @@ export default function Navbar() {
           </Link>
         </div>
       </div>
-    </nav>
+      </nav>
+    </header>
   );
 }
 

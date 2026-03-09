@@ -4,92 +4,147 @@ import Button from "@/components/Button";
 import { siteContent } from "@/content/siteContent";
 
 export const metadata: Metadata = {
-  title: "Tretmani – Masaže i fizioterapija u Zagrebu | Fizio Ensō",
+  title: "Tretmani | Masaže i fizioterapija u Zagrebu | Fizio Ensō",
   description: "Ponuda masaža i terapijskih tretmana u Zagrebu: relaks, seitai, revital masaža, limfna drenaža, Tecar i aparaturni postupci za oporavak i smanjenje boli.",
   openGraph: {
-    title: "Tretmani – Masaže i fizioterapija u Zagrebu | Fizio Ensō",
+    title: "Tretmani | Masaže i fizioterapija u Zagrebu | Fizio Ensō",
     description: "Ponuda masaža i terapijskih tretmana u Zagrebu: relaks, seitai, revital masaža, limfna drenaža, Tecar i aparaturni postupci za oporavak i smanjenje boli.",
     type: "website",
     locale: "hr_HR",
   },
 };
 
+function ServiceBlock({
+  id,
+  name,
+  description,
+  duration,
+  for: forWho,
+}: {
+  id: string;
+  name: string;
+  description: string;
+  duration?: string;
+  for: string;
+}) {
+  return (
+    <div id={id} className="scroll-mt-24">
+      <div className="bg-white rounded-lg shadow-subtle p-8">
+        <h3 className="font-serif text-2xl mb-4 text-foreground">{name}</h3>
+        <p className="text-accent mb-6 leading-relaxed">{description}</p>
+        <div className="grid md:grid-cols-2 gap-6">
+          <div>
+            <h4 className="font-medium text-foreground mb-2">Kome je namijenjeno:</h4>
+            <p className="text-sm text-accent">{forWho}</p>
+          </div>
+          {duration && (
+            <div>
+              <h4 className="font-medium text-foreground mb-2">Trajanje:</h4>
+              <p className="text-sm text-accent">{duration}</p>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function TransitionBlock({ paragraphs }: { paragraphs: string[] }) {
+  return (
+    <div className="max-w-4xl mx-auto py-6">
+      <div className="space-y-4 text-accent leading-relaxed">
+        {paragraphs.map((p, i) => (
+          <p key={i}>{p}</p>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export default function ServicesPage() {
+  const { services } = siteContent;
+  const manual = services.manual.items;
+  const apparatus = services.apparatus.items;
+
+  const getManual = (id: string) => manual.find((s) => s.id === id)!;
+  const getApparatus = (id: string) => apparatus.find((s) => s.id === id)!;
+
   return (
     <>
-      <Section className="pt-24">
-        <div className="max-w-4xl mx-auto text-center mb-16">
-          <h1 className="font-serif text-4xl md:text-5xl mb-6 text-foreground">
-            Naši tretmani
+      {/* USLUGE – naslov */}
+      <Section className="pt-28 md:pt-32 pb-4 md:pb-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="font-serif text-4xl md:text-5xl text-foreground">
+            {services.pageTitle}
           </h1>
-          <p className="text-lg text-accent">
-            Svaki tretman u Ensōu temelji se na holističkom pristupu tijelu, kombinirajući stručnost i intuitivni rad.
+        </div>
+      </Section>
+
+      {/* Uvod: što je masaža – odvojeno od naslova */}
+      <Section className="pt-6 pb-4 md:pt-8 md:pb-6">
+        <div className="max-w-4xl mx-auto">
+          <p className="text-accent leading-relaxed">
+            {services.masazaIntro}
           </p>
         </div>
       </Section>
 
-      {/* Manual Therapies */}
+      {/* Masaže: relaks, seitai, revital masaža */}
       <Section>
-        <h2 className="font-serif text-3xl md:text-4xl mb-12 text-foreground">
-          {siteContent.services.manual.title}
-        </h2>
         <div className="space-y-16">
-          {siteContent.services.manual.items.map((service) => (
-            <div key={service.id} id={service.id} className="scroll-mt-24">
-              <div className="bg-white rounded-lg shadow-subtle p-8">
-                <h3 className="font-serif text-2xl mb-4 text-foreground">
-                  {service.name}
-                </h3>
-                <p className="text-accent mb-6 leading-relaxed">
-                  {service.description}
-                </p>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h4 className="font-medium text-foreground mb-2">Kome je namijenjeno:</h4>
-                    <p className="text-sm text-accent">{service.for}</p>
-                  </div>
-                  {service.duration && (
-                    <div>
-                      <h4 className="font-medium text-foreground mb-2">Trajanje:</h4>
-                      <p className="text-sm text-accent">{service.duration}</p>
-                    </div>
-                  )}
-                </div>
-              </div>
-            </div>
-          ))}
+          <ServiceBlock {...getManual("relaks")} />
+          <ServiceBlock {...getManual("seitai")} />
+          <ServiceBlock {...getManual("revital-masaza")} />
+
+          <TransitionBlock paragraphs={services.transitionAfterRevitalMasaza} />
+
+          <ServiceBlock {...getManual("revital-tretman")} />
+
+          <TransitionBlock paragraphs={services.transitionAfterRevitalTretman} />
+
+          <ServiceBlock {...getManual("taiso")} />
+          <ServiceBlock {...getManual("limfna")} />
+          <ServiceBlock {...getManual("rinpa")} />
         </div>
       </Section>
 
-      {/* Apparatus Procedures */}
+      {/* Prijelaz pred aparaturne postupke */}
       <Section className="bg-white">
+        <div className="max-w-4xl mx-auto">
+          <p className="text-accent leading-relaxed">{services.transitionBeforeApparatus}</p>
+        </div>
+      </Section>
+
+      {/* Aparaturni postupci */}
+      <Section>
         <h2 className="font-serif text-3xl md:text-4xl mb-12 text-foreground">
-          {siteContent.services.apparatus.title}
+          {services.apparatus.title}
         </h2>
         <div className="space-y-16">
-          {siteContent.services.apparatus.items.map((service) => (
-            <div key={service.id} id={service.id} className="scroll-mt-24">
-              <div className="bg-background rounded-lg shadow-subtle p-8">
-                <h3 className="font-serif text-2xl mb-4 text-foreground">
-                  {service.name}
-                </h3>
-                <p className="text-accent mb-6 leading-relaxed">
-                  {service.description}
-                </p>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h4 className="font-medium text-foreground mb-2">Kome je namijenjeno:</h4>
-                    <p className="text-sm text-accent">{service.for}</p>
-                  </div>
-                  {service.duration && (
-                    <div>
-                      <h4 className="font-medium text-foreground mb-2">Trajanje:</h4>
-                      <p className="text-sm text-accent">{service.duration}</p>
-                    </div>
-                  )}
-                </div>
-              </div>
-            </div>
+          <ServiceBlock {...getApparatus("tecar")} />
+          <ServiceBlock {...getApparatus("misicna-stimulacija")} />
+          <ServiceBlock {...getApparatus("ultrazvuk")} />
+          <ServiceBlock {...getApparatus("laser")} />
+          <ServiceBlock {...getApparatus("biomagnetna")} />
+        </div>
+      </Section>
+
+      {/* VacuTherm program */}
+      <Section>
+        <h2 className="font-serif text-3xl md:text-4xl mb-6 text-foreground">
+          {services.vacutherm.title}
+        </h2>
+        <p className="text-accent leading-relaxed mb-12">{services.vacutherm.intro}</p>
+        <div className="space-y-16">
+          {services.vacutherm.items.map((item) => (
+            <ServiceBlock
+              key={item.id}
+              id={item.id}
+              name={item.name}
+              description={item.description}
+              duration={item.duration || undefined}
+              for={item.for}
+            />
           ))}
         </div>
       </Section>
@@ -110,4 +165,3 @@ export default function ServicesPage() {
     </>
   );
 }
-

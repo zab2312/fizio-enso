@@ -13,28 +13,41 @@ export default function ContactPage() {
     message: "",
   });
   const [showSuccess, setShowSuccess] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Client-side validation
     if (!formData.name || (!formData.email && !formData.phone) || !formData.message) {
-      alert("Molimo popunite sva obavezna polja.");
+      setError("Molimo popunite sva obavezna polja.");
       return;
     }
-    
-    // Show success message
-    setShowSuccess(true);
-    setFormData({ name: "", email: "", phone: "", message: "" });
-    
-    // Hide success message after 5 seconds
-    setTimeout(() => setShowSuccess(false), 5000);
+    setError(null);
+    setIsSubmitting(true);
+    try {
+      const res = await fetch("https://formspree.io/f/maqpqngp", {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: { "Content-Type": "application/json" },
+      });
+      if (!res.ok) {
+        throw new Error("Slanje nije uspjelo.");
+      }
+      setShowSuccess(true);
+      setFormData({ name: "", email: "", phone: "", message: "" });
+      setTimeout(() => setShowSuccess(false), 5000);
+    } catch {
+      setError("Poruka nije poslana. Pokušajte ponovno ili nas kontaktirajte putem telefona ili emaila.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <>
-      <Section className="pt-24">
+      <Section className="pt-28 md:pt-32 pb-4 md:pb-6">
         <div className="max-w-4xl mx-auto">
-          <h1 className="font-serif text-4xl md:text-5xl mb-12 text-center text-foreground">
+          <h1 className="font-serif text-4xl md:text-5xl mb-2 text-center text-foreground">
             {siteContent.contact.title}
           </h1>
         </div>
@@ -102,6 +115,11 @@ export default function ContactPage() {
                   Hvala vam! Vaša poruka je poslana. Kontaktirat ćemo vas uskoro.
                 </div>
               )}
+              {error && (
+                <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg text-red-800 text-sm">
+                  {error}
+                </div>
+              )}
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
@@ -155,9 +173,10 @@ export default function ContactPage() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full px-8 py-3 bg-foreground text-background rounded-lg font-medium shadow-subtle hover:shadow-card transition-all duration-300 hover:bg-accent"
+                  disabled={isSubmitting}
+                  className="w-full px-8 py-3 bg-foreground text-background rounded-lg font-medium shadow-subtle hover:shadow-card transition-all duration-300 hover:bg-accent disabled:opacity-70 disabled:cursor-not-allowed"
                 >
-                  Pošalji poruku
+                  {isSubmitting ? "Šaljem…" : "Pošalji poruku"}
                 </button>
               </form>
             </div>

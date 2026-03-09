@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Fizio Ensō - Harmonija tijela i uma",
+  title: "Fizio Ensō | Harmonija tijela i uma",
   description: "Tretmani pod rukama fizioterapeuta. Prostor u kojem pokret postaje smiren, disanje dublje, a tijelo prisutnije.",
 };
 
@@ -23,8 +23,8 @@ export default function RootLayout({
       addressLocality: "Zagreb",
       addressCountry: "HR",
     },
-    telephone: "+385992147200",
-    email: "fizioenso@gmail.com",
+    telephone: "+385957229922",
+    email: "fizioenso8@gmail.com",
     // url: "https://www.fizioenso.hr", // TODO: Add actual domain when available
     areaServed: {
       "@type": "City",

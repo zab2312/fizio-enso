@@ -1,8 +1,8 @@
 export const siteContent = {
   brand: {
     name: "Fizio Ensō",
-    tagline: "harmonija tijela i uma",
-    fullName: "ensō njega tijela",
+    tagline: "Harmonija tijela i uma",
+    fullName: "Ensō njega tijela",
   },
   nav: {
     home: "Početna",
@@ -14,8 +14,24 @@ export const siteContent = {
   },
   home: {
     hero: {
-      title: "ensō",
-      subtitle: "njega tijela",
+      title: "Ensō",
+      subtitle: "Njega tijela",
+      headline: "Krug cijelovitosti i ravnoteže",
+      description:
+        "Prepustite se stručno vođenim tretmanima fizioterapeuta koji spaja terapiju i opuštanje u individualno prilagođene programe oporavka.",
+      ctaUsluge: "Pogledajte naše usluge",
+      ctaRezervirajte: "Rezervirajte termin",
+    },
+    whatEnsoOffers: {
+      title: "Što Ensō nudi",
+      intro:
+        "Ensō te vodi kroz opuštanje, olakšavanje boli i oporavak; nudi odmak od rutine, vrijeme za obnovu tijela i uma te je saveznik u pripremnim i preventivnim periodima.",
+      items: [
+        "Tretmani za olakšavanje boli, oporavak i funkcionalno vraćanje tijela, uz stručno vodstvo fizioterapeuta.",
+        "Akutna ili kronična stanja.",
+        "Tretmani za osobe koje se suočavaju s tegobama koje su povezane sa specifičnošću određene profesije.",
+        "Tretmani za podršku kao i tretmani za oporavak natjecateljskih rekreativaca.",
+      ],
     },
     intro: {
       title: "Harmonija tijela i uma",
@@ -35,10 +51,16 @@ export const siteContent = {
     title: "O Ensōu",
     philosophy: {
       title: "O Ensōu",
-      text: "Ensō je više od imena. To je ideja - kružni tok povratka sebi. U svijetu stalnog ubrzanja, ovdje se sve usporava. Pokret, pažnja, dah - sve se vraća u svoju tišinu. Kao fizioterapeut radim s Vama i za Vas, osluškujući tijelo i prilagođavajući se njegovom trenutku. Ovdje nije cilj \"učiniti više\", već učiniti manje - s više prisutnosti. Ensō nudi svjesno vraćanje sebi.",
+      text: "Ensō je više od imena. To je ideja kružnog toka povratka sebi. U svijetu stalnog ubrzanja, ovdje se sve usporava. Pokret, pažnja, dah, sve se vraća u svoju tišinu. Kao fizioterapeut radim s Vama i za Vas, osluškujući tijelo i prilagođavajući se njegovom trenutku. Ovdje nije cilj \"učiniti više\", već učiniti manje, s više prisutnosti. Ensō nudi svjesno vraćanje sebi.",
     },
+    meetSectionTitle: "Ovo je Petra",
     therapist: {
       title: "O terapeutkinji",
+      nameFull: "Petra, bacc.physioth.",
+      role: "FIZIOTERAPEUT",
+      quote:
+        "Ensō sam osnovala s vizijom stvaranja prostora u kojem ćete se osjećati ugodno i podržano na putu prema ravnoteži tijela i uma. Moj je cilj pružiti vam pažljivo vođen tretman i pomoći vam da tijelo i um pronađu svoju prirodnu ritam.",
+      signature: "Petra",
       text: "Kao fizioterapeut radim s Vama i za Vas, osluškujući tijelo i prilagođavajući se njegovom trenutku. Svaki tretman je prilagođen vašim potrebama i trenutnom stanju tijela.",
     },
     slogans: [
@@ -48,6 +70,45 @@ export const siteContent = {
     ],
   },
   services: {
+    pageTitle: "Usluge",
+    pageIntro:
+      "Holistički pristup tijelu: tretmani koji vraćaju prirodni ritam i smiruju um.",
+    masazaIntro:
+      "Masaža je drevni način oporavka tijela. Ima ugodno opuštajuće djelovanje, jača imunološki sustav, poboljšava protok krvi kroz tijelo, masažom se potiče regeneracija kože, uspostavlja se unutarnja ravnoteža cijelog organizma.",
+    transitionAfterRevitalMasaza: [
+      "Ako masaža kroz palpatorni rad prepozna dublji izvor tegoba, otvara se prostor za ciljanu terapijsku nadogradnju.",
+      "Dodir tada ne djeluje samo umirujuće, već postaje početak usmjerenog procesa oporavka i rehabilitacije.",
+      "Upravo na tom mjestu prirodno se nadovezuje revital tretman, kao logičan sljedeći korak kada tijelo nakon dobrobiti masaže traži dublju, strukturiranu podršku.",
+    ],
+    transitionAfterRevitalTretman: [
+      "Nakon što revital tretman potakne dublje procese oporavka, nudimo terapijski tretman da se postignuto nadogradi svjesnim radom kroz pokret, kako se učinak ne bi samo osjetio, već i trajno održao u svakodnevnoj funkciji.",
+      "U tom se kontinuitetu prirodno nadovezuje taiso, kao faza u kojoj se obnova pretače u stabilnost, elastičnost i kontrolu pokreta.",
+    ],
+    transitionBeforeApparatus:
+      "Postoje trenuci kad tijelo ne traži pokret, već prisutnost, onu koja prodire dublje od dodira. Zato u ponudi imamo kurativne postupke dubljeg učinka.",
+    vacutherm: {
+      title: "VacuTherm program",
+      intro:
+        "VacuTherm program spaja pokret, toplinu infracrvenog spektra i ciljano vakuumsko djelovanje u jedinstven pristup podrške tijelu. Riječ je o suvremenoj metodi koja kroz kombinaciju hodanja i termovakuumske stimulacije potiče cirkulaciju, limfni protok i metaboličku aktivnost. Program se individualno prilagođava stanju i ciljevima korisnika.",
+      items: [
+        {
+          id: "fire-body-traka",
+          name: "Fire body traka",
+          description:
+            "Vakuumska traka za hodanje i lagano trčanje s infracrvenom toplinom omogućuje vođeni kardio-trening. Potiče cirkulaciju, limfni protok i osjećaj lakoće u nogama.",
+          duration: "",
+          for: "Osobe koje žele unaprijediti kondiciju, podržati regeneraciju i potaknuti metabolizam.",
+        },
+        {
+          id: "fire-body-roll",
+          name: "Fire body roll",
+          description:
+            "Uređaj za termo masažu s infracrvenim zagrijavanjem i mehaničkom stimulacijom. Pomaže opuštanju mišića i limfnoj protočnosti. Može se koristiti samostalno ili u sklopu VacuTherm programa.",
+          duration: "",
+          for: "Osobe koje traže podršku oporavku i protočnosti tijela.",
+        },
+      ],
+    },
     manual: {
       title: "Manualne terapije",
       items: [
@@ -55,7 +116,7 @@ export const siteContent = {
           id: "relaks",
           name: "Relaks masaža",
           description:
-            "Umirujuća i nježna masaža tijela koja promiče opuštanje živčanog sustava, poboljšava san i vraća tijelo u stanje mira. Ova masaža ne zahtijeva – dopušta.",
+            "Umirujuća i nježna masaža tijela koja promiče opuštanje živčanog sustava, poboljšava san i vraća tijelo u stanje mira. Ova masaža ne zahtijeva, dopušta.",
           duration: "25 min / 55 min",
           for: "Osobe koje traže opuštanje, smanjenje stresa i poboljšanje kvalitete sna.",
         },
@@ -175,22 +236,22 @@ export const siteContent = {
           name: "Relaks masaža",
           serviceId: "relaks",
           durations: [
-            { duration: "25 min", price: "28 eur" },
-            { duration: "55 min", price: "48 eur" },
+            { duration: "25 min", price: "28 EUR" },
+            { duration: "55 min", price: "48 EUR" },
           ],
         },
         {
           name: "Seitai masaža",
           serviceId: "seitai",
           durations: [
-            { duration: "25 min", price: "38 eur" },
-            { duration: "55 min", price: "55 eur" },
+            { duration: "25 min", price: "38 EUR" },
+            { duration: "55 min", price: "55 EUR" },
           ],
         },
         {
           name: "Revital masaža",
           serviceId: "revital-masaza",
-          durations: [{ duration: "55 min", price: "65 eur" }],
+          durations: [{ duration: "55 min", price: "65 EUR" }],
         },
       ],
     },
@@ -201,38 +262,38 @@ export const siteContent = {
           name: "Revital tretman",
           serviceId: "revital-tretman",
           durations: [
-            { duration: "1x (75 min)", price: "70 eur" },
-            { duration: "5x (75 min)", price: "300 eur" },
-            { duration: "10x (75 min)", price: "575 eur" },
+            { duration: "1x (75 min)", price: "70 EUR" },
+            { duration: "5x (75 min)", price: "300 EUR" },
+            { duration: "10x (75 min)", price: "575 EUR" },
           ],
         },
         {
           name: "Rinpa tretman",
           serviceId: "rinpa",
           durations: [
-            { duration: "1x (70-90 min)", price: "60 eur" },
-            { duration: "10x (70-90 min)", price: "450 eur" },
+            { duration: "1x (70-90 min)", price: "60 EUR" },
+            { duration: "10x (70-90 min)", price: "450 EUR" },
           ],
         },
         {
           name: "Taiso body",
           serviceId: "taiso",
           durations: [
-            { duration: "1x (45-55 min)", price: "30 eur" },
-            { duration: "10x (45-55 min)", price: "250 eur" },
+            { duration: "1x (45-55 min)", price: "30 EUR" },
+            { duration: "10x (45-55 min)", price: "250 EUR" },
           ],
         },
         {
           name: "Limfna drenaža",
           serviceId: "limfna",
           durations: [
-            { duration: "1x (20 min)", price: "15 eur" },
-            { duration: "5x (20 min)", price: "65 eur" },
-            { duration: "1x (30 min)", price: "20 eur" },
-            { duration: "5x (30 min)", price: "85 eur" },
-            { duration: "1x (55 min)", price: "30 eur" },
-            { duration: "5x (55 min)", price: "100 eur" },
-            { duration: "10x (55 min)", price: "200 eur" },
+            { duration: "1x (20 min)", price: "15 EUR" },
+            { duration: "5x (20 min)", price: "65 EUR" },
+            { duration: "1x (30 min)", price: "20 EUR" },
+            { duration: "5x (30 min)", price: "85 EUR" },
+            { duration: "1x (55 min)", price: "30 EUR" },
+            { duration: "5x (55 min)", price: "100 EUR" },
+            { duration: "10x (55 min)", price: "200 EUR" },
           ],
         },
       ],
@@ -243,27 +304,27 @@ export const siteContent = {
         {
           name: "Tecar",
           serviceId: "tecar",
-          durations: [{ duration: "10 min", price: "15 eur" }],
+          durations: [{ duration: "10 min", price: "15 EUR" }],
         },
         {
           name: "Mišićna stimulacija",
           serviceId: "misicna-stimulacija",
-          durations: [{ duration: "20-30 min", price: "20 eur" }],
+          durations: [{ duration: "20-30 min", price: "20 EUR" }],
         },
         {
           name: "Stimulacija ultrazvučnim valovima",
           serviceId: "ultrazvuk",
-          durations: [{ duration: "Varijabilno", price: "12 eur" }],
+          durations: [{ duration: "Varijabilno", price: "12 EUR" }],
         },
         {
           name: "Regenerativna laserska stimulacija",
           serviceId: "laser",
-          durations: [{ duration: "Varijabilno", price: "12 eur" }],
+          durations: [{ duration: "Varijabilno", price: "12 EUR" }],
         },
         {
           name: "Biomagnetna stimulacija",
           serviceId: "biomagnetna",
-          durations: [{ duration: "Varijabilno", price: "12 eur" }],
+          durations: [{ duration: "Varijabilno", price: "12 EUR" }],
         },
       ],
     },
@@ -272,31 +333,31 @@ export const siteContent = {
       items: [
         {
           name: "Fire Body Single",
-          description: "infrared&vakum + roll masaža",
+          description: "Infrared&vakum + roll masaža",
           durations: [
-            { duration: "1x", price: "30,00 eur" },
-            { duration: "4x", price: "120,00 eur" },
-            { duration: "8x", price: "190,00 eur" },
-            { duration: "12x", price: "250,00 eur" },
-            { duration: "16x", price: "280,00 eur" },
-            { duration: "20x", price: "300,00 eur" },
-            { duration: "24x", price: "350,00 eur" },
+            { duration: "1x", price: "30,00 EUR" },
+            { duration: "4x", price: "120,00 EUR" },
+            { duration: "8x", price: "190,00 EUR" },
+            { duration: "12x", price: "250,00 EUR" },
+            { duration: "16x", price: "280,00 EUR" },
+            { duration: "20x", price: "300,00 EUR" },
+            { duration: "24x", price: "350,00 EUR" },
           ],
-          note: "+ nakon svakog treninga gratis limfna drenaža u trajanju od 15 minuta",
+          note: "+ Nakon svakog treninga gratis limfna drenaža u trajanju od 15 minuta.",
         },
         {
           name: "Fire Body Duo",
-          description: "infrared&vakum + roll masaža",
+          description: "Infrared&vakum + roll masaža",
           durations: [
-            { duration: "1x", price: "50,00 eur" },
-            { duration: "4x", price: "200,00 eur" },
-            { duration: "8x", price: "340,00 eur" },
-            { duration: "12x", price: "450,00 eur" },
-            { duration: "16x", price: "510,00 eur" },
-            { duration: "20x", price: "540,00 eur" },
-            { duration: "24x", price: "630,00 eur" },
+            { duration: "1x", price: "50,00 EUR" },
+            { duration: "4x", price: "200,00 EUR" },
+            { duration: "8x", price: "340,00 EUR" },
+            { duration: "12x", price: "450,00 EUR" },
+            { duration: "16x", price: "510,00 EUR" },
+            { duration: "20x", price: "540,00 EUR" },
+            { duration: "24x", price: "630,00 EUR" },
           ],
-          note: "+ nakon svakog treninga gratis limfna drenaža u trajanju od 15 minuta",
+          note: "+ Nakon svakog treninga gratis limfna drenaža u trajanju od 15 minuta.",
         },
       ],
     },
@@ -311,11 +372,77 @@ export const siteContent = {
   contact: {
     title: "Kontakt",
     address: "Ulica Ivana Rendića 29, Zagreb",
-    phone: "099 214 72 00",
-    email: "fizioenso@gmail.com",
+    addressFull: "Studio u mirnom dijelu Maksimira, lako dostupan automobilom i javnim prijevozom.",
+    phone: "095 722 9922",
+    email: "fizioenso8@gmail.com",
     hours: "Po dogovoru",
     mapPlaceholder: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2780.64121621878!2d16.0036489766217!3d45.81844340973282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d70066bb86c3%3A0xdf4cfe196b0c1176!2sFizio%20ens%C5%8D!5e0!3m2!1sen!2shr!4v1770487352962!5m2!1sen!2shr",
   },
+  social: {
+    instagram: "https://www.instagram.com/fizioenso/",
+    tiktok: "https://www.tiktok.com/@fizio_enso",
+  },
+  faq: [
+    {
+      question: "Koji su načini plaćanja?",
+      answer:
+        "Plaćanje možete izvršiti gotovinom, karticom ili transakcijski (internet bankarstvom).",
+    },
+    {
+      question: "Da li se tijekom masaže treba skinuti?",
+      answer:
+        "Prije masaže potrebno je osloboditi onaj dio tijela koji će se tretirati. Ako dolazite na masažu cijeloga tijela, potrebno je skinuti se u donje rublje.",
+    },
+    {
+      question: "Da li tijekom tretmana smijem pričati?",
+      answer:
+        "Tijekom tretmana možete slobodno razgovarati ako to želite, no također je u redu ako preferirate opuštanje u tišini.",
+    },
+    {
+      question: "Što ako zaspem tijekom tretmana?",
+      answer: "Bez brige, nećemo Vas buditi do kraja tretmana.",
+    },
+    {
+      question: "Koliko dugo nakon tretmana mogu ostati u prostoriji?",
+      answer:
+        "Preporučuje se da nakon tretmana ostanete ležati minutu, a zatim polako sjednete i ustanete. Nakon toga slobodno odvojite vrijeme koje Vam je potrebno da se obučete i uredite.",
+    },
+    {
+      question: "Mogu li se istuširati nakon tretmana?",
+      answer:
+        "Možete se istuširati nakon tretmana. Naš prostor je opremljen tušem i čistim ručnicima.",
+    },
+    {
+      question: "Što da napravim s nakitom?",
+      answer:
+        "Od nakita potrebno je ukloniti ogrlicu, narukvicu i sat, odnosno ono što se nalazi na području koje tretiramo.",
+    },
+    {
+      question: "Kako da se pripremim za tretman?",
+      answer:
+        "Preporučuje se da se istuširate prije dolaska. Ako ste u mogućnosti, odaberite udobnu odjeću koja omogućuje lako presvlačenje i komfor nakon tretmana. Izbjegavajte obilne obroke neposredno prije tretmana.",
+    },
+    {
+      question: "Jesu li tretmani bolni?",
+      answer:
+        "Naši tretmani uglavnom nisu bolni. U slučaju jačih tehnika, prilagodit ćemo se prema Vašoj toleranciji.",
+    },
+    {
+      question: "Što ako stignem prije dogovorenog termina?",
+      answer:
+        'Na termine poželjno je doći u točno dogovoreno vrijeme. U slučaju ranijeg dolaska, ljubazno Vas molimo da ne zvonite, kako ne biste ometali tretman klijenta prije Vas. Ako želite provjeriti postoji li mogućnost ranijeg početka, slobodno nam pošaljite poruku na broj 095 722 9922.',
+    },
+    {
+      question: "Što ako kasnim na tretman?",
+      answer:
+        'Molimo Vas da se pridržavate dogovorenih termina i na njih dolazite točno na vrijeme. Ukoliko kasnite, molimo Vas da nas obavijestite porukom na broj 095 722 9922. U slučaju kada kašnjenje utječe na raspored sljedećih klijenata, tretman će biti skraćen za vrijeme kašnjenja, bez mogućnosti produljenja.',
+    },
+    {
+      question: "Što ako ne mogu doći na tretman?",
+      answer:
+        'U slučaju nemogućnosti dolaska na dogovoreni termin, ljubazno Vas molimo da ga otkažete najmanje 24 sata ranije porukom ili pozivom na broj 095 722 9922. Termini koji se otkažu manje od 24 sata ranije ili u slučaju nepojavljivanja na termin, naplaćuju se u punom iznosu.',
+    },
+  ],
   testimonials: [
     {
       id: 1,

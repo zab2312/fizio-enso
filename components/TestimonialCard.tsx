@@ -19,7 +19,7 @@ export default function TestimonialCard({ name, text, rating }: TestimonialCardP
         ))}
       </div>
       <p className="text-sm text-accent mb-4 italic">"{text}"</p>
-      <p className="text-sm font-medium text-foreground">— {name}</p>
+      <p className="text-sm font-medium text-foreground">{name}</p>
     </div>
   );
 }

@@ -5,10 +5,10 @@ import Button from "@/components/Button";
 import { siteContent } from "@/content/siteContent";
 
 export const metadata: Metadata = {
-  title: "Cjenik – Cijene masaža i terapija u Zagrebu | Fizio Ensō",
+  title: "Cjenik | Cijene masaža i terapija u Zagrebu | Fizio Ensō",
   description: "Pregled cijena masaža, tretmana i aparaturnih postupaka u Fizio Ensō studiju u Zagrebu. Transparentan cjenik za sve usluge fizioterapije.",
   openGraph: {
-    title: "Cjenik – Cijene masaža i terapija u Zagrebu | Fizio Ensō",
+    title: "Cjenik | Cijene masaža i terapija u Zagrebu | Fizio Ensō",
     description: "Pregled cijena masaža, tretmana i aparaturnih postupaka u Fizio Ensō studiju u Zagrebu. Transparentan cjenik za sve usluge fizioterapije.",
     type: "website",
     locale: "hr_HR",
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
 export default function PricingPage() {
   return (
     <>
-      <Section className="pt-24">
+      <Section className="pt-28 md:pt-32 pb-4 md:pb-6">
         <div className="max-w-4xl mx-auto">
-          <h1 className="font-serif text-4xl md:text-5xl mb-12 text-center text-foreground">
+          <h1 className="font-serif text-4xl md:text-5xl mb-2 text-center text-foreground">
             Cjenik
           </h1>
         </div>
