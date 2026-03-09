@@ -202,9 +202,6 @@ export default function ContactPage() {
               className="absolute inset-0"
             />
           </div>
-          <p className="text-xs text-accent mt-4 italic">
-            * Zamijenite mapPlaceholder URL u content/siteContent.ts s pravom Google Maps embed URL adresom
-          </p>
         </div>
       </Section>
     </>
