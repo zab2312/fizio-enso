@@ -106,7 +106,7 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Form */}
-            <div>
+            <div id="forma" className="scroll-mt-28">
               <h2 className="font-serif text-2xl mb-6 text-foreground">
                 Pošaljite poruku
               </h2>

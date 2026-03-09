@@ -62,21 +62,29 @@ export default function Navbar() {
             {siteContent.brand.name}
           </Link>
           
-          <div className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-sm text-foreground hover:text-accent transition-colors">
-              {siteContent.nav.home}
-            </Link>
-            <Link href="/o-ensu" className="text-sm text-foreground hover:text-accent transition-colors">
-              {siteContent.nav.about}
-            </Link>
-            <Link href="/tretmani" className="text-sm text-foreground hover:text-accent transition-colors">
-              {siteContent.nav.services}
-            </Link>
-            <Link href="/cjenik" className="text-sm text-foreground hover:text-accent transition-colors">
-              {siteContent.nav.pricing}
-            </Link>
-            <Link href="/kontakt" className="text-sm text-foreground hover:text-accent transition-colors">
-              {siteContent.nav.contact}
+          <div className="hidden md:flex items-center gap-6">
+            <div className="flex items-center space-x-8">
+              <Link href="/" className="text-sm text-foreground hover:text-accent transition-colors">
+                {siteContent.nav.home}
+              </Link>
+              <Link href="/o-ensu" className="text-sm text-foreground hover:text-accent transition-colors">
+                {siteContent.nav.about}
+              </Link>
+              <Link href="/tretmani" className="text-sm text-foreground hover:text-accent transition-colors">
+                {siteContent.nav.services}
+              </Link>
+              <Link href="/cjenik" className="text-sm text-foreground hover:text-accent transition-colors">
+                {siteContent.nav.pricing}
+              </Link>
+              <Link href="/kontakt" className="text-sm text-foreground hover:text-accent transition-colors">
+                {siteContent.nav.contact}
+              </Link>
+            </div>
+            <Link
+              href="/kontakt#forma"
+              className="shrink-0 px-5 py-2.5 bg-foreground text-background text-sm font-medium rounded-lg hover:bg-accent transition-colors"
+            >
+              Rezerviraj termin
             </Link>
           </div>
 
@@ -142,6 +150,13 @@ export default function Navbar() {
             onClick={() => setIsMobileMenuOpen(false)}
           >
             {siteContent.nav.contact}
+          </Link>
+          <Link
+            href="/kontakt#forma"
+            className="mt-4 block w-full py-3 px-4 bg-foreground text-background text-center font-medium rounded-lg hover:bg-accent transition-colors"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Rezerviraj termin
           </Link>
         </div>
       </div>
