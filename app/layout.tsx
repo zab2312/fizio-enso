@@ -24,7 +24,7 @@ export default function RootLayout({
       addressCountry: "HR",
     },
     telephone: "+385957229922",
-    email: "fizioenso8@gmail.com",
+    email: "ensofizio8@gmail.com",
     // url: "https://www.fizioenso.hr", // TODO: Add actual domain when available
     areaServed: {
       "@type": "City",

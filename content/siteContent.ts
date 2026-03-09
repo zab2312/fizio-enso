@@ -374,7 +374,7 @@ export const siteContent = {
     address: "Ulica Ivana Rendića 29, Zagreb",
     addressFull: "Studio u mirnom dijelu Maksimira, lako dostupan automobilom i javnim prijevozom.",
     phone: "095 722 9922",
-    email: "fizioenso8@gmail.com",
+    email: "ensofizio8@gmail.com",
     hours: "Po dogovoru",
     mapPlaceholder: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2780.64121621878!2d16.0036489766217!3d45.81844340973282!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d70066bb86c3%3A0xdf4cfe196b0c1176!2sFizio%20ens%C5%8D!5e0!3m2!1sen!2shr!4v1770487352962!5m2!1sen!2shr",
   },
