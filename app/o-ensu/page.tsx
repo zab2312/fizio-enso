@@ -5,10 +5,10 @@ import { siteContent } from "@/content/siteContent";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "O Ensōu | Filozofija i pristup | Fizio Ensō",
+  title: "dobrodošli u ensō | Filozofija i pristup | Fizio Ensō",
   description: "Upoznajte filozofiju Fizio Ensō studija. Individualni pristup fizioterapiji i masažama u Zagrebu, fokusiran na ravnotežu tijela i uma.",
   openGraph: {
-    title: "O Ensōu | Filozofija i pristup | Fizio Ensō",
+    title: "dobrodošli u ensō | Filozofija i pristup | Fizio Ensō",
     description: "Upoznajte filozofiju Fizio Ensō studija. Individualni pristup fizioterapiji i masažama u Zagrebu, fokusiran na ravnotežu tijela i uma.",
     type: "website",
     locale: "hr_HR",
@@ -18,22 +18,44 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <Section className="pt-28 md:pt-32 pb-4 md:pb-6">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="font-serif text-4xl md:text-5xl mb-6 text-center text-foreground">
+      <Section className="pt-28 md:pt-32 pb-16 md:pb-24">
+        <div className="max-w-6xl mx-auto px-4">
+          <h1 className="font-serif text-4xl md:text-5xl mb-12 md:mb-16 text-center text-foreground">
             {siteContent.about.title}
           </h1>
-          <p className="text-lg text-accent leading-relaxed">
-            {siteContent.about.philosophy.text}
-          </p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 xl:gap-24 items-center">
+            <div className="space-y-6 max-w-xl">
+              {siteContent.about.philosophy.paragraphs.map((paragraph, i) => (
+                <p
+                  key={i}
+                  className={`text-lg md:text-xl text-accent leading-loose text-left ${i === siteContent.about.philosophy.paragraphs.length - 1 ? "italic" : ""}`}
+                >
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+            <div className="mx-auto lg:mx-0 lg:ml-12 shrink-0 flex items-center justify-center">
+              <div
+                className="relative flex items-center justify-center rounded-full bg-background w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 shadow-[0_0_50px_rgba(0,0,0,0.12),0_0_100px_rgba(0,0,0,0.08)]"
+                aria-hidden
+              >
+                <div className="relative w-52 h-52 sm:w-60 sm:h-60 lg:w-72 lg:h-72">
+                  <Image
+                    src="/info/logo.png"
+                    alt="Fizio Ensō logo"
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 640px) 208px, (max-width: 1024px) 240px, 288px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </Section>
 
       {/* Ovo je Petra – umjesto sekcije O terapeutkinji */}
-      <Section id="terapeutkinja" className="scroll-mt-24 bg-white">
-        <h2 className="font-serif text-3xl md:text-4xl mb-10 text-center text-foreground">
-          {siteContent.about.meetSectionTitle}
-        </h2>
+      <Section id="terapeutkinja" className="scroll-mt-24 bg-white normal-case">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center max-w-5xl mx-auto">
           <div className="relative">
             <div className="relative aspect-[3/4] max-w-sm mx-auto lg:mx-0 rounded-lg overflow-hidden bg-gray-200 shadow-card">
@@ -65,43 +87,6 @@ export default function AboutPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
             </Link>
-          </div>
-        </div>
-      </Section>
-
-      {/* Slogans */}
-      <Section>
-        <div className="max-w-4xl mx-auto">
-          <div className="space-y-8">
-            {siteContent.about.slogans.map((slogan, index) => (
-              <div
-                key={index}
-                className="text-center py-8 border-t border-b border-gray-200"
-              >
-                <p className="font-serif text-2xl md:text-3xl text-foreground italic">
-                  {slogan}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </Section>
-
-      {/* Space features moved from Prostor & oprema */}
-      <Section className="bg-white">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-serif text-3xl mb-8 text-foreground">
-            Što nudi naš prostor
-          </h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {siteContent.space.features.map((feature, index) => (
-              <div
-                key={index}
-                className="bg-background rounded-lg shadow-subtle p-6"
-              >
-                <p className="text-accent">{feature}</p>
-              </div>
-            ))}
           </div>
         </div>
       </Section>

@@ -39,7 +39,7 @@ export default function Footer() {
           
           <div>
             <h4 className="font-serif mb-4">Kontakt</h4>
-            <ul className="space-y-2 text-sm text-background/80">
+            <ul className="space-y-2 text-sm text-background/80 normal-case">
               <li>{siteContent.contact.address}</li>
               <li>
                 <a href={`tel:${siteContent.contact.phone}`} className="hover:text-background transition-colors">

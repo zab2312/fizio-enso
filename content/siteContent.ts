@@ -7,7 +7,7 @@ export const siteContent = {
   nav: {
     home: "Početna",
     about: "O nama",
-    services: "Tretmani",
+    services: "Usluge",
     space: "Prostor & Oprema",
     pricing: "Cjenik",
     contact: "Kontakt",
@@ -16,16 +16,18 @@ export const siteContent = {
     hero: {
       title: "Ensō",
       subtitle: "Njega tijela",
-      headline: "Krug cijelovitosti i ravnoteže",
+      headline: "ensō",
       description:
-        "Prepustite se stručno vođenim tretmanima fizioterapeuta koji spaja terapiju i opuštanje u individualno prilagođene programe oporavka.",
-      ctaUsluge: "Pogledajte naše usluge",
-      ctaRezervirajte: "Rezervirajte termin",
+        "individualno prilagođeni tretmani koji spajaju terapiju i opuštanje za oporavak tijela i uma",
+      ctaUsluge: "Pogledaj tretmane",
+      ctaRezervirajte: "Rezerviraj termin",
     },
     whatEnsoOffers: {
-      title: "Što Ensō nudi",
+      title: "što ensō nudi",
       intro:
-        "Ensō te vodi kroz opuštanje, olakšavanje boli i oporavak; nudi odmak od rutine, vrijeme za obnovu tijela i uma te je saveznik u pripremnim i preventivnim periodima.",
+        "ensō te vodi kroz opuštanje, olakšavanje boli i oporavak; nudi odmak od rutine, vrijeme za obnovu tijela i uma te je saveznik u pripremnim i preventivnim periodima.",
+      introBeforeList:
+        "ensō je tu da te vodi kroz proces opuštanja, olakšavanja boli, oporavka od aktivnosti svakodnevnog života i nudi dragocjen odmak od rutine.",
       items: [
         "Tretmani za olakšavanje boli, oporavak i funkcionalno vraćanje tijela, uz stručno vodstvo fizioterapeuta.",
         "Akutna ili kronična stanja.",
@@ -36,11 +38,11 @@ export const siteContent = {
     intro: {
       title: "Harmonija tijela i uma",
       description:
-        "Prostor u kojem pokret postaje smiren, disanje dublje, a tijelo prisutnije. Pod rukama fizioterapeuta iskusite jedinstvene tretmane pomoću kojih Vaše tijelo nalazi ravnotežu, a um smirenost. Tretmani koji dovode do ravnoteže tijela i uma.",
-      cta: "Saznaj više o pristupu",
+        "Prostor u kojem pokret postaje smiren, disanje dublje, a tijelo prisutnije. Pod rukama fizioterapeuta iskusi jedinstvene tretmane pomoću kojih tvoje tijelo nalazi ravnotežu, a um smirenost. Tretmani koji dovode do ravnoteže tijela i uma.",
+      cta: "Naše usluge",
     },
     finalCta: {
-      title: "Vrijeme je da se tvoje tijelo osjeća bolje.",
+      title: "vrijeme je da se tvoje tijelo osjeća bolje.",
       buttons: {
         book: "Rezerviraj termin",
         pricing: "Pogledaj cjenik",
@@ -48,20 +50,25 @@ export const siteContent = {
     },
   },
   about: {
-    title: "O Ensōu",
+    title: "dobrodošli u ensō",
     philosophy: {
       title: "O Ensōu",
-      text: "Ensō je više od imena. To je ideja kružnog toka povratka sebi. U svijetu stalnog ubrzanja, ovdje se sve usporava. Pokret, pažnja, dah, sve se vraća u svoju tišinu. Kao fizioterapeut radim s Vama i za Vas, osluškujući tijelo i prilagođavajući se njegovom trenutku. Ovdje nije cilj \"učiniti više\", već učiniti manje, s više prisutnosti. Ensō nudi svjesno vraćanje sebi.",
+      paragraphs: [
+        "ensō je više od imena. to je ideja kružnog povratka sebi. u svijetu stalnog ubrzanja, ovdje se sve usporava. pokret, pažnja i dah vraćaju se u tišinu.",
+        "kao fizioterapeut radim s tobom i za tebe, osluškujući tijelo i prilagođavajući se njegovom trenutku. ovdje cilj nije učiniti više, nego učiniti manje, s više prisutnosti.",
+        "ensō je prostor svjesnog vraćanja sebi.",
+      ],
     },
-    meetSectionTitle: "Ovo je Petra",
+    meetSectionTitle: "ovo je",
+    meetSectionTitleName: "Petra",
     therapist: {
       title: "O terapeutkinji",
       nameFull: "Petra, bacc.physioth.",
       role: "FIZIOTERAPEUT",
       quote:
-        "Ensō sam osnovala s vizijom stvaranja prostora u kojem ćete se osjećati ugodno i podržano na putu prema ravnoteži tijela i uma. Moj je cilj pružiti vam pažljivo vođen tretman i pomoći vam da tijelo i um pronađu svoju prirodnu ritam.",
+        "ensō sam osnovala s vizijom stvaranja prostora u kojem ćeš se osjećati ugodno i podržano na putu prema ravnoteži tijela i uma. Moj je cilj pružiti ti pažljivo vođen tretman i pomoći ti da tijelo i um pronađu svoju prirodnu ritam.",
       signature: "Petra",
-      text: "Kao fizioterapeut radim s Vama i za Vas, osluškujući tijelo i prilagođavajući se njegovom trenutku. Svaki tretman je prilagođen vašim potrebama i trenutnom stanju tijela.",
+      text: "Kao fizioterapeut radim s tobom i za tebe, osluškujući tijelo i prilagođavajući se njegovom trenutku. Svaki tretman je prilagođen tvojim potrebama i trenutnom stanju tijela.",
     },
     slogans: [
       "Manje napora. Više prisutnosti.",
@@ -89,21 +96,21 @@ export const siteContent = {
     vacutherm: {
       title: "VacuTherm program",
       intro:
-        "VacuTherm program spaja pokret, toplinu infracrvenog spektra i ciljano vakuumsko djelovanje u jedinstven pristup podrške tijelu. Riječ je o suvremenoj metodi koja kroz kombinaciju hodanja i termovakuumske stimulacije potiče cirkulaciju, limfni protok i metaboličku aktivnost. Program se individualno prilagođava stanju i ciljevima korisnika.",
+        "VacuTherm program spaja pokret, toplinu infracrvenog spektra i ciljano vakuumsko djelovanje u jedinstven pristup podrške tijelu. riječ je o suvremenoj metodi koja kroz kombinaciju hodanja i termovakuumske stimulacije potiče cirkulaciju, limfni protok i metaboličku aktivnost. program je prikladan za osobe koje žele unaprijediti opću tjelesnu kondiciju, podržati regeneraciju uz kontroliranu aktivnost, potaknuti metabolizam te oblikovati siluetu. program se individualno prilagođava stanju i ciljevima korisnika.",
       items: [
         {
           id: "fire-body-traka",
-          name: "Fire body traka",
+          name: "VacuTherm traka",
           description:
-            "Vakuumska traka za hodanje i lagano trčanje s infracrvenom toplinom omogućuje vođeni kardio-trening. Potiče cirkulaciju, limfni protok i osjećaj lakoće u nogama.",
+            "vakuumska traka za hodanje i lagano trčanje omogućuje vođeni kardio-trening u uvjetima kontroliranog vakuuma i infracrvene topline. takav pristup pojačava aktivaciju donjeg dijela tijela, povećava energetsku potrošnju te dodatno podržava rad krvožilnog i limfnog sustava. tijekom kretanja prisutna je ugodna dubinska toplina koja doprinosi boljoj prokrvljenosti i osjećaju lakoće u nogama.",
           duration: "",
           for: "Osobe koje žele unaprijediti kondiciju, podržati regeneraciju i potaknuti metabolizam.",
         },
         {
           id: "fire-body-roll",
-          name: "Fire body roll",
+          name: "VacuTherm roll",
           description:
-            "Uređaj za termo masažu s infracrvenim zagrijavanjem i mehaničkom stimulacijom. Pomaže opuštanju mišića i limfnoj protočnosti. Može se koristiti samostalno ili u sklopu VacuTherm programa.",
+            "fire body roll je uređaj za termo masažu koji objedinjuje infracrveno zagrijavanje i mehaničku stimulaciju. ritmičkim pokretima pomaže opuštanju mišića, potiče limfnu protočnost i doprinosi boljoj kvaliteti i tonusu kože. može se koristiti samostalno ili kao nadopuna VacuTherm programu — kada tijelo treba dodatnu podršku oporavku i protočnosti.",
           duration: "",
           for: "Osobe koje traže podršku oporavku i protočnosti tijela.",
         },
@@ -116,7 +123,7 @@ export const siteContent = {
           id: "relaks",
           name: "Relaks masaža",
           description:
-            "Umirujuća i nježna masaža tijela koja promiče opuštanje živčanog sustava, poboljšava san i vraća tijelo u stanje mira. Ova masaža ne zahtijeva, dopušta.",
+            "umirujuća i nježna masaža tijela koja potiče opuštanje živčanog sustava, poboljšava san i vraća tijelo u stanje mira. ovo je masaža koja ne traži - već dopušta.",
           duration: "25 min / 55 min",
           for: "Osobe koje traže opuštanje, smanjenje stresa i poboljšanje kvalitete sna.",
         },
@@ -124,7 +131,7 @@ export const siteContent = {
           id: "seitai",
           name: "Seitai masaža",
           description:
-            "Masaža temeljena na klasičnim tehnikama koja umjerenim pritiskom i ritmom pomaže oslobađanje napetosti, stimulira cirkulaciju i vraća osjećaj lagodnosti u pokretu. Masaža usmjerena na buđenje tijela, promicanje protoka kroz svaki mišić i aktiviranje prirodne vitalnosti.",
+            "usmjerena na otpuštanje dubinskih mišićnih napetosti i ukočenosti tijela, ova masaža pomaže uspostaviti bolji protok unutarnje energije. djeluje na tjelesnoj i mentalnoj razini, vraćajući osjećaj ravnoteže i lakoće pokreta. pažljivim promatranjem, ritmičkim dodirom i preciznim manualnim tehnikama vraća se prirodna ravnoteža pokreta i lakoća držanja. fokusira na rješavanje dubinskih mišićnih blokada i ukočenosti tijela te pomaže u harmonizaciji unutarnje energije, pružajući fizičku i mentalnu ravnotežu.",
           duration: "25 min / 55 min",
           for: "Osobe s napetostima u mišićima, potrebom za poboljšanjem cirkulacije i osjećajem lagodnosti.",
         },
@@ -132,7 +139,7 @@ export const siteContent = {
           id: "revital-masaza",
           name: "Revital masaža",
           description:
-            "Masaža usmjerena na dublje slojeve tkiva, koja uključuje rad na trigger točkama, miofascialne tehnike i duboku biostimulaciju. Pomaže oslobađanju ukočenosti tijela, kroničnih i dubokih napetosti, poboljšava protok i podržava regeneraciju. Djeluje na fizičkoj i mentalnoj razini, vraćajući osjećaj ravnoteže i lakoće pokreta.",
+            "dinamičnija tehnika masaže usmjerena na poticanje cirkulacije, razbuđivanje tijela, protočnosti kroz svaki mišić i aktivaciju prirodne vitalnosti. osobitu vrijednost pokazuje u pripremnim razdobljima. djeluje kao pripremna i preventivna podrška tijelu, bilo da se radi o fizičkom opterećenju ili mentalnoj zahtjevnosti. preporučuje se u razdobljima kada se tijelo priprema za povećanu aktivnost — kao tehnika koja podržava spremnost, otpornost i optimalnu funkciju.",
           duration: "55 min",
           for: "Osobe s kroničnim napetostima, ukočenošću i potrebom za dubljom regeneracijom.",
         },
@@ -140,7 +147,7 @@ export const siteContent = {
           id: "revital-tretman",
           name: "Revital tretman",
           description:
-            "Kombinacija masažnih tehnika i ciljane manipulacije tkiva za duboku regeneraciju, korištenjem kurativnog postupka s dubokim djelovanjem. Preporučuje se tijekom faza oporavka, nakon značajnog fizičkog napora i za osobe koje osjećaju da je njihovo tijelo spremno za tih, ali snažan povratak u svoje prirodno stanje.",
+            "kombinacija masažnih tehnika i ciljane manipulacije tkiva za dublju regeneraciju uz pomoć kurativnog postupka dubljeg učinka. ovaj tretman preporučuje se u fazama oporavka i rehabilitacije, kao i nakon većih napora kada tijelu treba dodatna podrška u regeneraciji.",
           duration: "75 min",
           for: "Osobe u fazi oporavka, nakon fizičkog napora, s potrebom za dubokom regeneracijom.",
         },
@@ -148,7 +155,7 @@ export const siteContent = {
           id: "limfna",
           name: "Limfna drenaža",
           description:
-            "Nježno stimulira prirodnu dinamiku limfe, tekućine odgovorne za čišćenje, ravnotežu i tihi protok života unutar tijela. Izvodi se bez pritiska, ali s ritmom, s ciljem vraćanja osjećaja lagodnosti u nogama, promicanja detoksikacije i pomoći tijelu da \"diše\" kroz vlastiti sustav. Posebno preporučuje se za blokade, otekline, umor i osjećaj \"zadržavanja\" u tijelu.",
+            "ovaj tretman nježno potiče prirodnu cirkulaciju limfe – tjelesne tekućine koja ima važnu ulogu u uklanjanju metaboličkih produkata iz tkiva, održavanju ravnoteže tekućina u organizmu i podršci imunološkom sustavu. laganim ritmičnim pritiscima drenaža podržava prirodne procese čišćenja i regulacije tekućina u organizmu, potiče detoksikaciju i vraća osjećaj lakoće u tijelu. preporučuje se kod zastoja, otečenosti, umora i osjećaja \"zadržavanja\" u tijelu.",
           duration: "20 min / 30 min / 55 min",
           for: "Osobe s oteklina, blokadama, umorom i potrebom za detoksikacijom.",
         },
@@ -156,7 +163,7 @@ export const siteContent = {
           id: "taiso",
           name: "Taiso",
           description:
-            "Taiso je japanska metoda rada s tijelom koja kombinira pokrete, disanje i svjesnost. Pomaže vraćanju prirodnog ritma tijela i smirivanju uma.",
+            "tretman usmjeren na fleksibilnost tijela, poboljšanje pokretljivosti zglobova i snaženje tijela, samim time i poboljšavanje kontrole pokreta. preporučuje se kod osjećaja ukočenosti, smanjene fleksibilnosti, statičkih opterećenja i nepravilnog držanja.",
           duration: "45-55 min",
           for: "Osobe koje traže holistički pristup vraćanju ravnoteže tijela i uma.",
         },
@@ -164,7 +171,7 @@ export const siteContent = {
           id: "rinpa",
           name: "Rinpa tretman",
           description:
-            "Rinpa je jedinstvena metoda koja kombinira različite tehnike za postizanje duboke ravnoteže i regeneracije tijela.",
+            "tretman inspiriran principom ritmične usklađenosti. kombinira stimulaciju mišića, limfnu potporu i dubinsku mikromasažu - u cilju poboljšanja cirkulacije, ubrzanja regeneracije i smanjenja napetosti. pokreti i tehnologija izmjenjuju se u nizu koji potiče tijelo da se opusti, ali i aktivira - skladno, bez suvišnog otpora.",
           duration: "70-90 min",
           for: "Osobe koje traže sveobuhvatan tretman za regeneraciju i ravnotežu.",
         },
@@ -177,7 +184,7 @@ export const siteContent = {
           id: "tecar",
           name: "Tecar",
           description:
-            "Uvodi toplinu, stimulira cirkulaciju i omekšava napeto tkivo. Podržava prirodne procese oporavka, a tijelo počinje ubrzavati vlastite procese regeneracije. Posebno korisno za stagnaciju oporavka, kronične napetosti, lokaliziranu bol i ukočenost koja se ne rješava sama.",
+            "ovaj tretman unosi toplinu, potiče cirkulaciju i omekšava napeto tkivo i podržava prirodne procese oporavka. tijelo počinje ubrzavati vlastiti oporavak. tkivo postaje podatnije, bol se stišava, a osjećaj \"zarobljenosti\" u tijelu polako popušta. preporučuje se kod zastoja u oporavku, kronične napetosti, lokalizirane boli i osjećaja ukočenosti.",
           duration: "10 min",
           for: "Osobe s napetim tkivom, potrebom za poboljšanjem cirkulacije i ubrzanjem oporavka.",
         },
@@ -185,7 +192,7 @@ export const siteContent = {
           id: "misicna-stimulacija",
           name: "Mišićna stimulacija",
           description:
-            "Električni podražaji aktiviraju mišićna vlakna, promiču cirkulaciju i vraćaju tonus oslabljenim područjima. Tretman je unutarnji podsjetnik tijelu da se pokrene, probudi i poveže sa svojom snagom.",
+            "električni podražaji aktiviraju mišićna vlakna, potiču cirkulaciju i vraćaju tonus oslabljenim područjima. tretman djeluje poput unutarnjeg podsjetnika tijelu - da se pokrene, probudi i poveže s vlastitom snagom.",
           duration: "20-30 min",
           for: "Osobe s oslabljenim mišićima, potrebom za poboljšanjem tonusa i cirkulacije.",
         },
@@ -193,7 +200,7 @@ export const siteContent = {
           id: "ultrazvuk",
           name: "Stimulacija ultrazvučnim valovima",
           description:
-            "Precizni zvučni valovi djeluju poput mikromasaže u dubljim slojevima tkiva, promiču cirkulaciju, omekšavaju zadebljanja i ubrzavaju prirodni tijek obnove. Posebno korisno za bolne tetive, miozelozu i lokalizirane kronične napetosti.",
+            "precizni zvučni valovi djeluju poput mikromasaže u dubljim slojevima tkiva - potiču cirkulaciju, omekšavaju zadebljanja i ubrzavaju prirodni tijek obnove. posebno koristan kod bolnih tetiva, miogeloza i lokaliziranih kroničnih napetosti.",
           duration: "Varijabilno",
           for: "Osobe s bolnim tetivama, miozelozom i lokaliziranim kroničnim napetostima.",
         },
@@ -201,7 +208,7 @@ export const siteContent = {
           id: "laser",
           name: "Regenerativna laserska stimulacija",
           description:
-            "Usmjereni snop svjetlosti prodire duboko u tkivo, stimulira staničnu aktivnost, smanjuje bol i ubrzava regeneraciju. Tretman je bezbolan, nježan na površini, ali snažan u djelovanju na dublje strukture. Preporučuje se za bolne točke, upalna stanja i sporo zacjeljivanje.",
+            "usmjereni snop svjetla prodire duboko u tkivo, gdje potiče staničnu aktivnost, smanjuje bol i ubrzava regeneraciju. tretman je bezbolan, nježan na površini, ali snažan u djelovanju na dublje strukture – preporučuje se kod bolnih točaka, upalnih stanja i usporenog cijeljenja.",
           duration: "Varijabilno",
           for: "Osobe s bolnim točkama, upalnim stanjima i potrebom za ubrzanjem regeneracije.",
         },
@@ -209,7 +216,7 @@ export const siteContent = {
           id: "biomagnetna",
           name: "Biomagnetna stimulacija",
           description:
-            "Niskofrekventno magnetsko polje prodire u duboka tkiva, promičući regeneraciju, uključujući kosti i vezivno tkivo. Djeluje na staničnoj razini, ubrzavajući oporavak. Za razliku od drugih tretmana, biomagnetna stimulacija posebno koristi za kronična stanja i teško zacjeljivanje.",
+            "magnetsko polje niske frekvencije prodire u dublja tkiva, potičući regeneraciju, uključujući koštano i vezivno tkivo. djeluje na staničnoj razini, ubrzavajući oporavak. za razliku od drugih tretmana biomagnetna stimulacija posebno pogoduje kroničnim stanjima, otežanom cijeljenju kostiju, edemima i regeneraciji nakon operacija, djeluje bez zagrijavanja tkiva.",
           duration: "Varijabilno",
           for: "Osobe s kroničnim stanjima, potrebom za regeneracijom kostiju i vezivnog tkiva.",
         },
@@ -364,7 +371,7 @@ export const siteContent = {
     notes: [
       "PDV nije uračunat prema čl.90 st.1 zakona o PDV-u",
       "Plaćanje se vrši gotovinom ili kartično",
-      "Molimo Vas da, u slučaju potrebe za otkazivanjem ili promjenom termina, to učinite najmanje 24 sata unaprijed",
+      "Molimo te da, u slučaju potrebe za otkazivanjem ili promjenom termina, to učiniš najmanje 24 sata unaprijed",
       "Za termine, koji se otkažu manje od 24 sata ranije ili u slučaju nepojavljivanja pri rezervaciji sljedećeg zadržavamo pravo naplate 50% od propuštene usluge sukladno važećem cjeniku",
       "Zahvaljujemo na razumijevanju i poštivanju našeg vremena, kao i vremena drugih klijenata",
     ],
@@ -384,33 +391,19 @@ export const siteContent = {
   },
   faq: [
     {
+      question: "Kako da se pripremim za tretman?",
+      answer:
+        "Izbjegavaj obilne obroke neposredno prije tretmana i vodi računa da si dovoljno hidriran/na. u slučaju potrebe u prostoru su ti osigurane sve male udobnosti koje doprinose osjećaju opuštenosti — od papuča i ogrtača do mogućnosti da se u miru istuširaš prije i nakon tretmana. u tom slučaju molimo da to napomeneš pri dogovoru kako bismo osigurali vrijeme i pripremili tuš.",
+    },
+    {
       question: "Koji su načini plaćanja?",
       answer:
-        "Plaćanje možete izvršiti gotovinom, karticom ili transakcijski (internet bankarstvom).",
+        "plaćanje možeš izvršiti gotovinom ili kartično. ako unaprijed želiš potvrditi detalje oko termina i plaćanja, slobodno nam se javi prije dolaska kako bismo sve pripremili bez stresa.",
     },
     {
-      question: "Da li se tijekom masaže treba skinuti?",
+      question: "Što ako ne mogu doći na dogovoreni termin?",
       answer:
-        "Prije masaže potrebno je osloboditi onaj dio tijela koji će se tretirati. Ako dolazite na masažu cijeloga tijela, potrebno je skinuti se u donje rublje.",
-    },
-    {
-      question: "Da li tijekom tretmana smijem pričati?",
-      answer:
-        "Tijekom tretmana možete slobodno razgovarati ako to želite, no također je u redu ako preferirate opuštanje u tišini.",
-    },
-    {
-      question: "Što ako zaspem tijekom tretmana?",
-      answer: "Bez brige, nećemo Vas buditi do kraja tretmana.",
-    },
-    {
-      question: "Koliko dugo nakon tretmana mogu ostati u prostoriji?",
-      answer:
-        "Preporučuje se da nakon tretmana ostanete ležati minutu, a zatim polako sjednete i ustanete. Nakon toga slobodno odvojite vrijeme koje Vam je potrebno da se obučete i uredite.",
-    },
-    {
-      question: "Mogu li se istuširati nakon tretmana?",
-      answer:
-        "Možete se istuširati nakon tretmana. Naš prostor je opremljen tušem i čistim ručnicima.",
+        "pri rezervaciji sljedećeg zadržavamo pravo naplate 50% od propuštene usluge sukladno važećem cjeniku. zahvaljujemo na razumijevanju i poštivanju našeg vremena, kao i vremena drugih klijenata.",
     },
     {
       question: "Što da napravim s nakitom?",
@@ -418,60 +411,111 @@ export const siteContent = {
         "Od nakita potrebno je ukloniti ogrlicu, narukvicu i sat, odnosno ono što se nalazi na području koje tretiramo.",
     },
     {
-      question: "Kako da se pripremim za tretman?",
+      question: "Trebam li se skinuti za masažu?",
       answer:
-        "Preporučuje se da se istuširate prije dolaska. Ako ste u mogućnosti, odaberite udobnu odjeću koja omogućuje lako presvlačenje i komfor nakon tretmana. Izbjegavajte obilne obroke neposredno prije tretmana.",
+        "Prije masaže potrebno je osloboditi onaj dio tijela koji će se tretirati. Ako dolaziš na masažu cijeloga tijela, potrebno je skinuti se u donje rublje ili jednokratne gaćice koje osiguravamo. Tijekom masaže bit ćeš pokriven/na ručnicima, a samo dio tijela koji se masira će biti otkriven – diskretno i profesionalno.",
     },
     {
-      question: "Jesu li tretmani bolni?",
+      question: "Jesam li jako masna/an nakon masaže?",
       answer:
-        "Naši tretmani uglavnom nisu bolni. U slučaju jačih tehnika, prilagodit ćemo se prema Vašoj toleranciji.",
+        "Koža ostaje lagano nauljena, ali ne pretjerano. Ulje se upija kroz masažu i ostavlja kožu mekanom i nahranjenom. Također, nakon masaže terapeut te pobriše sa toplim ručnicima.",
     },
     {
-      question: "Što ako stignem prije dogovorenog termina?",
+      question: "Koja ulja koristite?",
       answer:
-        'Na termine poželjno je doći u točno dogovoreno vrijeme. U slučaju ranijeg dolaska, ljubazno Vas molimo da ne zvonite, kako ne biste ometali tretman klijenta prije Vas. Ako želite provjeriti postoji li mogućnost ranijeg početka, slobodno nam pošaljite poruku na broj 095 722 9922.',
+        "Koristimo kvalitetna masažna ulja na prirodnoj bazi, pogodna za sve tipove kože, uključujući i osjetljivu.",
     },
     {
-      question: "Što ako kasnim na tretman?",
+      question: "Mogu li donijeti svoje ulje?",
       answer:
-        'Molimo Vas da se pridržavate dogovorenih termina i na njih dolazite točno na vrijeme. Ukoliko kasnite, molimo Vas da nas obavijestite porukom na broj 095 722 9922. U slučaju kada kašnjenje utječe na raspored sljedećih klijenata, tretman će biti skraćen za vrijeme kašnjenja, bez mogućnosti produljenja.',
+        "Naravno! Ako imaš omiljeno ili medicinsko ulje, slobodno ga donesi – rado ćemo ga koristiti.",
     },
     {
-      question: "Što ako ne mogu doći na tretman?",
+      question: "Hoću li imati upalu mišića nakon masaže?",
       answer:
-        'U slučaju nemogućnosti dolaska na dogovoreni termin, ljubazno Vas molimo da ga otkažete najmanje 24 sata ranije porukom ili pozivom na broj 095 722 9922. Termini koji se otkažu manje od 24 sata ranije ili u slučaju nepojavljivanja na termin, naplaćuju se u punom iznosu.',
+        "Moguće je osjetiti blagu napetost jedan do dva dana nakon tretmana, što je normalna reakcija tijela na masažu tkiva.",
+    },
+    {
+      question: "Po čemu se razlikuje revital tretman od revital masaže?",
+      answer:
+        "Osim što koristi i metode dubljeg učinka pomoću terapijskih uređaja dovodi do potpune regeneracije tretiranog segmenta.",
+    },
+    {
+      question: "Po čemu se razlikuje kraća verzija masaže od duže?",
+      answer:
+        "Razlikuje se po segmentima koji se tretiraju. Kraća verzija najčešće podrazumijeva leđa i noge, a koristi se kao brzo olakšanje, dok duža masaža tretira cijelo tijelo kroz detaljniji rad.",
+    },
+    {
+      question: "Koliko često se preporučuje masaža?",
+      answer:
+        "Za osobe s kroničnom napetošću ili stresom preporučuje se 1 put tjedno, dok je za održavanje dovoljno i 1–2 puta mjesečno, ovisno o potrebama.",
+    },
+    {
+      question: "Što ako zaspim tijekom tretmana?",
+      answer:
+        "To je u redu, dapače to je pokazatelj da si se opustio/la stoga te nećemo buditi do kraja tretmana.",
     },
   ],
+  // PLACEHOLDER: mockup testimonijali za prikaz dizajna, nisu stvarne online recenzije
   testimonials: [
     {
       id: 1,
-      name: "Marija K.",
-      text: "Najbolji tretman koji sam ikada doživjela. Osjećam se potpuno opušteno i regenerirano.",
+      name: "Marina K.",
+      occupation: "učiteljica",
+      treatment: "Revital tretman",
+      visits: "4 dolaska",
+      review:
+        "Na prvi termin sam došla zbog stalne napetosti u vratu i ramenima. Nakon tretmana sam prvi put nakon dugo vremena imala osjećaj da mi je tijelo stvarno opušteno. Svidjelo mi se što je pristup miran, individualan i bez žurbe.",
       rating: 5,
     },
     {
       id: 2,
       name: "Ivan P.",
-      text: "Profesionalan pristup i izvrsni rezultati. Preporučujem svima koji traže kvalitetnu fizioterapiju.",
+      occupation: "programer",
+      treatment: "Fizioterapijski tretman za bolna leđa",
+      visits: "6 dolazaka",
+      review:
+        "Zbog dugog sjedenja imao sam stalnu bol u donjem dijelu leđa i već sam bio frustriran jer se problem vraćao. Nakon nekoliko dolazaka stanje se značajno smirilo, a dobio sam i jasne smjernice što mogu raditi između tretmana. Cijelo iskustvo djeluje stručno i jako ugodno.",
       rating: 5,
     },
     {
       id: 3,
       name: "Ana M.",
-      text: "Prostor je prekrasan, a tretmani su stvarno jedinstveni. Vraćam se redovito.",
+      occupation: "marketinška specijalistica",
+      treatment: "Relaks masaža",
+      visits: "3 dolaska",
+      review:
+        "Došla sam iscrpljena i pod velikim stresom, više zbog osjećaja preopterećenosti nego zbog konkretne boli. Već nakon prvog dolaska sam primijetila da bolje spavam i da sam manje napeta tijekom dana. Ovo mi je postao ritual koji stvarno pomaže.",
       rating: 5,
     },
     {
       id: 4,
-      name: "Petra S.",
-      text: "Revital tretman mi je potpuno promijenio pristup vlastitom tijelu. Hvala!",
+      name: "Luka S.",
+      occupation: "rekreativni trkač",
+      treatment: "Sportska masaža / oporavak",
+      visits: "5 dolazaka",
+      review:
+        "Nakon pojačanih treninga imao sam osjećaj težine u nogama i zatezanje koje nije prolazilo samo od sebe. Tretmani su mi pomogli da se brže oporavim i nastavim trenirati bez osjećaja da stalno vučem umor. Posebno cijenim što je sve prilagođeno tome kako se tijelo osjeća taj dan.",
       rating: 5,
     },
     {
       id: 5,
-      name: "Marko L.",
-      text: "Kombinacija tradicionalnih i modernih tehnika daje izvrsne rezultate. Odličan pristup.",
+      name: "Petra V.",
+      occupation: "odvjetnica",
+      treatment: "Tretman za vrat i ramena",
+      visits: "4 dolaska",
+      review:
+        "Posao mi je stresan i velik dio dana provedem za računalom, pa su vrat i ramena stalno bili ukočeni. Nakon dolazaka osjećam puno veću lakoću pokreta i manje glavobolja povezanih s napetošću. Ambijent i pristup ulijevaju povjerenje od prvog trenutka.",
+      rating: 5,
+    },
+    {
+      id: 6,
+      name: "Tomislav R.",
+      occupation: "poduzetnik",
+      treatment: "Individualni fizioterapijski tretman",
+      visits: "7 dolazaka",
+      review:
+        "Najviše mi je značilo to što tretman nije bio generički, nego prilagođen onome što mi je u tom trenutku stvarno trebalo. Došao sam zbog kombinacije boli, stresa i umora, a kroz nekoliko dolazaka osjetio sam stvaran napredak. Preporučio bih svakome tko traži stručan pristup bez hladne kliničke atmosfere.",
       rating: 5,
     },
   ],

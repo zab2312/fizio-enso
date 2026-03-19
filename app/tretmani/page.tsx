@@ -29,21 +29,15 @@ function ServiceBlock({
 }) {
   return (
     <div id={id} className="scroll-mt-24">
-      <div className="bg-white rounded-lg shadow-subtle p-8">
+      <div className="bg-white rounded-2xl shadow-subtle p-8">
         <h3 className="font-serif text-2xl mb-4 text-foreground">{name}</h3>
         <p className="text-accent mb-6 leading-relaxed">{description}</p>
-        <div className="grid md:grid-cols-2 gap-6">
+        {duration && (
           <div>
-            <h4 className="font-medium text-foreground mb-2">Kome je namijenjeno:</h4>
-            <p className="text-sm text-accent">{forWho}</p>
+            <h4 className="font-medium text-foreground mb-2">Trajanje:</h4>
+            <p className="text-sm text-accent">{duration}</p>
           </div>
-          {duration && (
-            <div>
-              <h4 className="font-medium text-foreground mb-2">Trajanje:</h4>
-              <p className="text-sm text-accent">{duration}</p>
-            </div>
-          )}
-        </div>
+        )}
       </div>
     </div>
   );
@@ -51,8 +45,8 @@ function ServiceBlock({
 
 function TransitionBlock({ paragraphs }: { paragraphs: string[] }) {
   return (
-    <div className="max-w-4xl mx-auto py-6">
-      <div className="space-y-4 text-accent leading-relaxed">
+    <div className="max-w-4xl mx-auto py-10 md:py-14">
+      <div className="space-y-6 text-accent leading-relaxed text-base md:text-lg">
         {paragraphs.map((p, i) => (
           <p key={i}>{p}</p>
         ))}
@@ -83,7 +77,7 @@ export default function ServicesPage() {
       {/* Uvod: što je masaža – odvojeno od naslova */}
       <Section className="pt-6 pb-4 md:pt-8 md:pb-6">
         <div className="max-w-4xl mx-auto">
-          <p className="text-accent leading-relaxed">
+          <p className="text-accent leading-relaxed text-base md:text-lg">
             {services.masazaIntro}
           </p>
         </div>
@@ -110,14 +104,14 @@ export default function ServicesPage() {
 
       {/* Prijelaz pred aparaturne postupke */}
       <Section className="bg-white">
-        <div className="max-w-4xl mx-auto">
-          <p className="text-accent leading-relaxed">{services.transitionBeforeApparatus}</p>
+        <div className="max-w-4xl mx-auto py-10 md:py-14">
+          <p className="text-accent leading-relaxed text-base md:text-lg">{services.transitionBeforeApparatus}</p>
         </div>
       </Section>
 
       {/* Aparaturni postupci */}
       <Section>
-        <h2 className="font-serif text-3xl md:text-4xl mb-12 text-foreground">
+        <h2 className="font-serif text-3xl md:text-4xl mb-12 text-foreground italic">
           {services.apparatus.title}
         </h2>
         <div className="space-y-16">
@@ -131,10 +125,10 @@ export default function ServicesPage() {
 
       {/* VacuTherm program */}
       <Section>
-        <h2 className="font-serif text-3xl md:text-4xl mb-6 text-foreground">
+        <h2 className="font-serif text-3xl md:text-4xl mb-6 text-foreground italic">
           {services.vacutherm.title}
         </h2>
-        <p className="text-accent leading-relaxed mb-12">{services.vacutherm.intro}</p>
+        <p className="text-accent leading-relaxed mb-12 text-base md:text-lg">{services.vacutherm.intro}</p>
         <div className="space-y-16">
           {services.vacutherm.items.map((item) => (
             <ServiceBlock

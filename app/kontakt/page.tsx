@@ -4,6 +4,8 @@ import { useState } from "react";
 import Section from "@/components/Section";
 import Button from "@/components/Button";
 import { siteContent } from "@/content/siteContent";
+import { FaPhone } from "react-icons/fa";
+import { SiWhatsapp } from "react-icons/si";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -19,7 +21,7 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || (!formData.email && !formData.phone) || !formData.message) {
-      setError("Molimo popunite sva obavezna polja.");
+      setError("Molimo popuni sva obavezna polja.");
       return;
     }
     setError(null);
@@ -37,7 +39,7 @@ export default function ContactPage() {
       setFormData({ name: "", email: "", phone: "", message: "" });
       setTimeout(() => setShowSuccess(false), 5000);
     } catch {
-      setError("Poruka nije poslana. Pokušajte ponovno ili nas kontaktirajte putem telefona ili emaila.");
+      setError("Poruka nije poslana. Pokušaj ponovno ili nas kontaktiraj putem telefona ili emaila.");
     } finally {
       setIsSubmitting(false);
     }
@@ -64,7 +66,10 @@ export default function ContactPage() {
               <div className="space-y-4">
                 <div>
                   <h3 className="font-medium text-foreground mb-2">Adresa</h3>
-                  <p className="text-accent">{siteContent.contact.address}</p>
+                  <p className="text-accent normal-case">{siteContent.contact.address}</p>
+                  <p className="text-xs text-accent mt-2">
+                    napomena: ako dolaziš automobilom, parkiraj iza objekta i uđi kroz stražnji ulaz.
+                  </p>
                 </div>
                 <div>
                   <h3 className="font-medium text-foreground mb-2">Telefon</h3>
@@ -90,18 +95,22 @@ export default function ContactPage() {
                 </div>
               </div>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                <Button
-                  href={`tel:${siteContent.contact.phone}`}
-                  variant="primary"
+                <a
+                  href={`tel:${siteContent.contact.phone.replace(/\s/g, "")}`}
+                  className="inline-flex items-center justify-center gap-2 px-6 py-2 rounded-lg text-sm font-medium transition-all duration-300 shadow-subtle hover:shadow-card bg-foreground text-background hover:bg-accent"
                 >
-                  Pozovi
-                </Button>
-                <Button
-                  href={`mailto:${siteContent.contact.email}`}
-                  variant="secondary"
+                  <FaPhone className="w-4 h-4 shrink-0" />
+                  Nazovi
+                </a>
+                <a
+                  href="https://wa.me/385957229922"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-2 rounded-lg text-sm font-medium transition-all duration-300 shadow-subtle hover:shadow-card bg-white text-foreground border-2 border-foreground hover:bg-foreground hover:text-background"
                 >
-                  Pošalji email
-                </Button>
+                  <SiWhatsapp className="w-4 h-4 shrink-0" />
+                  WhatsApp
+                </a>
               </div>
             </div>
 
@@ -112,7 +121,7 @@ export default function ContactPage() {
               </h2>
               {showSuccess && (
                 <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg text-green-800 text-sm">
-                  Hvala vam! Vaša poruka je poslana. Kontaktirat ćemo vas uskoro.
+                  Hvala ti! Tvoja poruka je poslana. Kontaktirat ćemo te uskoro.
                 </div>
               )}
               {error && (

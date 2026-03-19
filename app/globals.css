@@ -8,6 +8,7 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Lora', serif;
+    text-transform: lowercase;
   }
   
   h1, h2, h3, h4, h5, h6 {
@@ -40,4 +41,3 @@ html {
 .drop-shadow-glow {
   filter: drop-shadow(0 0 40px rgba(0, 0, 0, 0.15));
 }
-

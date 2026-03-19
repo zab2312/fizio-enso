@@ -26,7 +26,7 @@ export default function Home() {
   return (
     <>
       <HeroVideo />
-      
+
       {/* Što Ensō nudi */}
       <Section>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-start">
@@ -37,16 +37,19 @@ export default function Home() {
             <p className="text-lg text-accent mb-6 leading-relaxed">
               {siteContent.home.whatEnsoOffers.intro}
             </p>
+            <p className="text-lg text-accent mb-6 leading-relaxed">
+              {siteContent.home.whatEnsoOffers.introBeforeList}
+            </p>
             <ul className="space-y-3 text-accent leading-relaxed list-none mb-8">
               {siteContent.home.whatEnsoOffers.items.map((item, i) => (
-                <li key={i} className="flex gap-3">
-                  <span className="text-foreground shrink-0 mt-1.5 w-1.5 h-1.5 rounded-full bg-foreground" aria-hidden />
+                <li key={i} className="flex gap-3 items-center">
+                  <span className="text-foreground shrink-0 leading-none" aria-hidden>—</span>
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
             <Link
-              href="/o-ensu"
+              href="/tretmani"
               className="inline-flex items-center gap-2 px-8 py-3 bg-foreground text-background rounded-lg font-medium shadow-subtle hover:shadow-card transition-all duration-300 hover:bg-accent"
             >
               {siteContent.home.intro.cta}
@@ -67,10 +70,62 @@ export default function Home() {
         </div>
       </Section>
 
+      {/* Kako izgleda prvi dolazak? */}
+      <Section className="bg-white">
+        <div className="max-w-4xl mx-auto text-center mb-10">
+          <h2 className="font-serif text-3xl md:text-4xl mb-4 text-foreground">
+            kako izgleda prvi dolazak?
+          </h2>
+          <p className="text-base md:text-lg text-accent leading-relaxed">
+            Jednostavan proces u 3 koraka kako biste bez stresa rezervirali i došli na tretman.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
+          <div className="bg-white/80 border border-foreground/5 rounded-xl shadow-subtle p-6 flex flex-col h-full">
+            <div className="flex items-center gap-3 mb-3">
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-foreground text-background text-sm font-semibold">
+                1
+              </span>
+              <h3 className="font-serif text-lg text-foreground">Rezerviraj termin</h3>
+            </div>
+            <p className="text-sm text-accent leading-relaxed">
+              Odaberi termin online ili nam se javi telefonom. Rezervacija traje svega nekoliko minuta.
+            </p>
+          </div>
+          <div className="bg-white/80 border border-foreground/5 rounded-xl shadow-subtle p-6 flex flex-col h-full">
+            <div className="flex items-center gap-3 mb-3">
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-foreground text-background text-sm font-semibold">
+                2
+              </span>
+              <h3 className="font-serif text-lg text-foreground">Kratka konzultacija</h3>
+            </div>
+            <p className="text-sm text-accent leading-relaxed">
+              Na prvom dolasku kratko procjenjujemo tvoje potrebe, tegobe i cilj tretmana kako bi pristup bio potpuno individualan.
+            </p>
+          </div>
+          <div className="bg-white/80 border border-foreground/5 rounded-xl shadow-subtle p-6 flex flex-col h-full">
+            <div className="flex items-center gap-3 mb-3">
+              <span className="flex h-8 w-8 items-center justify-center rounded-full bg-foreground text-background text-sm font-semibold">
+                3
+              </span>
+              <h3 className="font-serif text-lg text-foreground">Počni s tretmanom</h3>
+            </div>
+            <p className="text-sm text-accent leading-relaxed">
+              Nakon procjene slijedi tretman ili plan rada prilagođen tvom tijelu, stanju i tempu oporavka.
+            </p>
+          </div>
+        </div>
+        <div className="max-w-4xl mx-auto text-center mt-6">
+          <p className="text-xs sm:text-sm text-accent">
+            Imaš pitanje prije dolaska? Nazovi nas na <span className="font-medium text-foreground">095 722 9922</span>
+          </p>
+        </div>
+      </Section>
+
       {/* Services Preview */}
       <Section>
         <h2 className="font-serif text-3xl md:text-4xl mb-12 text-center text-foreground">
-          Naši tretmani
+          naši tretmani
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {manualServices.map((service) => (
@@ -95,13 +150,41 @@ export default function Home() {
         </div>
       </Section>
 
+      {/* Reviews */}
+      <Section className="bg-white">
+        <div className="max-w-4xl mx-auto text-center mb-8">
+          <h2 className="font-serif text-3xl md:text-4xl mb-3 text-center text-foreground">
+            što kažu naši klijenti
+          </h2>
+          <p className="text-base md:text-lg text-accent leading-relaxed mb-3">
+            Iskustva klijenata koji su došli zbog boli, napetosti, oporavka i potrebe za boljim osjećajem u tijelu.
+          </p>
+          <p className="inline-flex items-center rounded-full border border-foreground/10 bg-foreground/5 px-4 py-1 text-xs text-foreground">
+            Prosječna ocjena klijenata: <span className="font-semibold ml-1">4.9/5</span>
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {siteContent.testimonials.map((testimonial) => (
+            <TestimonialCard
+              key={testimonial.id}
+              name={testimonial.name}
+              occupation={testimonial.occupation}
+              treatment={testimonial.treatment}
+              visits={testimonial.visits}
+              review={testimonial.review}
+              rating={testimonial.rating}
+            />
+          ))}
+        </div>
+      </Section>
+
       {/* Space Preview */}
       <Section>
         <div className="max-w-4xl mx-auto mb-8">
           <h2 className="font-serif text-3xl md:text-4xl mb-6 text-center text-foreground">
-            Prostor
+            prostor
           </h2>
-          <p className="text-lg text-accent mb-6 text-center leading-relaxed">
+          <p className="text-lg text-accent mb-6 text-center leading-relaxed normal-case">
             {siteContent.space.description}
           </p>
         </div>
@@ -134,28 +217,8 @@ export default function Home() {
         </div>
       </Section>
 
-      {/* Reviews */}
-      <Section className="bg-white">
-        <h2 className="font-serif text-3xl md:text-4xl mb-12 text-center text-foreground">
-          Što kažu naši klijenti
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {siteContent.testimonials.map((testimonial) => (
-            <TestimonialCard
-              key={testimonial.id}
-              name={testimonial.name}
-              text={testimonial.text}
-              rating={testimonial.rating}
-            />
-          ))}
-        </div>
-      </Section>
-
       {/* Ovo je Petra */}
-      <Section className="bg-white">
-        <h2 className="font-serif text-3xl md:text-4xl mb-10 text-center text-foreground">
-          {siteContent.about.meetSectionTitle}
-        </h2>
+      <Section className="bg-white normal-case">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-14 items-center max-w-5xl mx-auto">
           <div className="relative">
             <div className="relative aspect-[3/4] max-w-sm mx-auto lg:mx-0 rounded-lg overflow-hidden bg-gray-200 shadow-card">

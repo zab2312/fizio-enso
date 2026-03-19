@@ -30,8 +30,8 @@ export default function Navbar() {
       const scrollPosition = window.scrollY;
       const heroHeight = window.innerHeight;
       
-      // Show navbar after scrolling past hero
-      if (scrollPosition > heroHeight * 0.8) {
+      // Show navbar only after hero is fully scrolled out (avoids dark overlay on video)
+      if (scrollPosition > heroHeight) {
         setIsVisible(true);
         setIsScrolled(true);
       } else {
@@ -55,34 +55,34 @@ export default function Navbar() {
       }`}
     >
       <TopBar />
-      <nav className="bg-background/95 backdrop-blur-sm">
+      <nav className="bg-foreground/95 text-background backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="text-xl font-serif font-semibold text-foreground hover:text-accent transition-colors">
+          <Link href="/" className="text-xl font-serif font-semibold text-background hover:text-white/90 transition-colors">
             {siteContent.brand.name}
           </Link>
           
           <div className="hidden md:flex items-center gap-6">
             <div className="flex items-center space-x-8">
-              <Link href="/" className="text-sm text-foreground hover:text-accent transition-colors">
+              <Link href="/" className="text-sm text-background hover:text-white/90 transition-colors">
                 {siteContent.nav.home}
               </Link>
-              <Link href="/o-ensu" className="text-sm text-foreground hover:text-accent transition-colors">
+              <Link href="/o-ensu" className="text-sm text-background hover:text-white/90 transition-colors">
                 {siteContent.nav.about}
               </Link>
-              <Link href="/tretmani" className="text-sm text-foreground hover:text-accent transition-colors">
+              <Link href="/tretmani" className="text-sm text-background hover:text-white/90 transition-colors">
                 {siteContent.nav.services}
               </Link>
-              <Link href="/cjenik" className="text-sm text-foreground hover:text-accent transition-colors">
+              <Link href="/cjenik" className="text-sm text-background hover:text-white/90 transition-colors">
                 {siteContent.nav.pricing}
               </Link>
-              <Link href="/kontakt" className="text-sm text-foreground hover:text-accent transition-colors">
+              <Link href="/kontakt" className="text-sm text-background hover:text-white/90 transition-colors">
                 {siteContent.nav.contact}
               </Link>
             </div>
             <Link
               href="/kontakt#forma"
-              className="shrink-0 px-5 py-2.5 bg-foreground text-background text-sm font-medium rounded-lg hover:bg-accent transition-colors"
+              className="shrink-0 px-5 py-2.5 bg-background text-foreground text-sm font-medium rounded-lg hover:bg-white transition-colors"
             >
               Rezerviraj termin
             </Link>
@@ -91,7 +91,7 @@ export default function Navbar() {
           {/* Mobile menu button */}
           <button
             type="button"
-            className="md:hidden text-foreground p-2 -mr-2 touch-manipulation"
+            className="md:hidden text-background p-2 -mr-2 touch-manipulation"
             onClick={() => setIsMobileMenuOpen((prev) => !prev)}
             aria-expanded={isMobileMenuOpen}
             aria-label={isMobileMenuOpen ? "Zatvori izbornik" : "Otvori izbornik"}
