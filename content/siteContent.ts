@@ -24,8 +24,6 @@ export const siteContent = {
     },
     whatEnsoOffers: {
       title: "što ensō nudi",
-      intro:
-        "ensō te vodi kroz opuštanje, olakšavanje boli i oporavak; nudi odmak od rutine, vrijeme za obnovu tijela i uma te je saveznik u pripremnim i preventivnim periodima.",
       introBeforeList:
         "ensō je tu da te vodi kroz proces opuštanja, olakšavanja boli, oporavka od aktivnosti svakodnevnog života i nudi dragocjen odmak od rutine.",
       items: [

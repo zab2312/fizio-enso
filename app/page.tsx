@@ -35,9 +35,6 @@ export default function Home() {
               {siteContent.home.whatEnsoOffers.title}
             </h2>
             <p className="text-lg text-accent mb-6 leading-relaxed">
-              {siteContent.home.whatEnsoOffers.intro}
-            </p>
-            <p className="text-lg text-accent mb-6 leading-relaxed">
               {siteContent.home.whatEnsoOffers.introBeforeList}
             </p>
             <ul className="space-y-3 text-accent leading-relaxed list-none mb-8">
