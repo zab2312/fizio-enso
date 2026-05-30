@@ -186,7 +186,7 @@ export default function Home() {
           </p>
         </div>
         {/* Slike prostora u jednom redu, s praznim prostorom s bokova */}
-        <div className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen px-4 md:px-8 lg:px-12">
+        <div className="w-full px-4 md:px-8 lg:px-12">
           <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
             {([1, 2, 3, 4] as const).map((num) => (
               <div

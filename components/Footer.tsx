@@ -1,7 +1,13 @@
+"use client";
+
 import Link from "next/link";
 import { siteContent } from "@/content/siteContent";
 
 export default function Footer() {
+  const openCookieSettings = () => {
+    window.dispatchEvent(new Event("open-cookie-settings"));
+  };
+
   return (
     <footer className="bg-foreground text-background py-12 mt-20">
       <div className="max-w-7xl mx-auto px-6">
@@ -52,6 +58,25 @@ export default function Footer() {
                 </a>
               </li>
             </ul>
+          </div>
+        </div>
+
+        <div className="mt-8">
+          <h4 className="font-serif mb-3">Pravne informacije</h4>
+          <div className="flex flex-wrap items-center gap-4 text-sm">
+            <Link href="/privacy-policy" className="hover:text-background/80 transition-colors">
+              Politika privatnosti
+            </Link>
+            <Link href="/cookie-policy" className="hover:text-background/80 transition-colors">
+              Politika kolačića
+            </Link>
+            <button
+              type="button"
+              onClick={openCookieSettings}
+              className="hover:text-background/80 transition-colors"
+            >
+              Postavke kolačića
+            </button>
           </div>
         </div>
         

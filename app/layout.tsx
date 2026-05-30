@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import CookieConsentManager from "@/components/CookieConsentManager";
 
 export const metadata: Metadata = {
   title: "Fizio Ensō | Harmonija tijela i uma",
@@ -43,6 +44,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <CookieConsentManager />
       </body>
     </html>
   );

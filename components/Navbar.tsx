@@ -115,45 +115,45 @@ export default function Navbar() {
           isMobileMenuOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="border-t border-foreground/10 bg-background/98 backdrop-blur-sm px-6 py-4 space-y-2">
+        <div className="border-t border-background/20 bg-foreground/98 backdrop-blur-sm px-6 py-4 space-y-2">
           <Link
             href="/"
-            className="block py-2 text-foreground hover:text-accent transition-colors"
+            className="block py-2 text-background hover:text-white/90 transition-colors"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             {siteContent.nav.home}
           </Link>
           <Link
             href="/o-ensu"
-            className="block py-2 text-foreground hover:text-accent transition-colors"
+            className="block py-2 text-background hover:text-white/90 transition-colors"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             {siteContent.nav.about}
           </Link>
           <Link
             href="/tretmani"
-            className="block py-2 text-foreground hover:text-accent transition-colors"
+            className="block py-2 text-background hover:text-white/90 transition-colors"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             {siteContent.nav.services}
           </Link>
           <Link
             href="/cjenik"
-            className="block py-2 text-foreground hover:text-accent transition-colors"
+            className="block py-2 text-background hover:text-white/90 transition-colors"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             {siteContent.nav.pricing}
           </Link>
           <Link
             href="/kontakt"
-            className="block py-2 text-foreground hover:text-accent transition-colors"
+            className="block py-2 text-background hover:text-white/90 transition-colors"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             {siteContent.nav.contact}
           </Link>
           <Link
             href="/kontakt#forma"
-            className="mt-4 block w-full py-3 px-4 bg-foreground text-background text-center font-medium rounded-lg hover:bg-accent transition-colors"
+            className="mt-4 block w-full py-3 px-4 bg-background text-foreground text-center font-medium rounded-lg hover:bg-white transition-colors"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Rezerviraj termin

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import Section from "@/components/Section";
 import Button from "@/components/Button";
 import { siteContent } from "@/content/siteContent";
@@ -187,6 +188,14 @@ export default function ContactPage() {
                 >
                   {isSubmitting ? "Šaljem…" : "Pošalji poruku"}
                 </button>
+                <p className="text-xs text-accent leading-relaxed">
+                  Podaci iz obrasca koriste se isključivo za obradu rezervacije termina i komunikaciju vezanu uz vaš upit.
+                  Više informacija dostupno je u{" "}
+                  <Link href="/privacy-policy" className="underline hover:text-foreground">
+                    Politici privatnosti
+                  </Link>
+                  .
+                </p>
               </form>
             </div>
           </div>
